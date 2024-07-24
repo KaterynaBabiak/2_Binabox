@@ -21,6 +21,15 @@ h2 {
     text-align: center;
 }
 
+ul,
+ol,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
 p {
     font-size: 18px;
     line-height: 28px;
@@ -62,6 +71,7 @@ p {
     text-transform: uppercase;
     color: #141B22;
     background-color: #21E786;
+    border: none;
 }
 
 /* -------------- HERO SECTION --------------*/
@@ -228,6 +238,19 @@ p {
 
 /* -------------- FOOTER SECTION --------------*/
 
+.join-us-text {
+    text-align: center;
+}
+
+.join-us-catalog-text {
+    text-align: center;
+    color: #F7F7F9;
+}
+
+.join-us-catalog{
+    background: linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
+}
+
 .join-us-discord-link {
     font-family: Bakbak One;
     font-size: 16px;
@@ -236,7 +259,6 @@ p {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #5865F2;
-
 }
 
 .join-us-whitelist-btn,
@@ -249,13 +271,19 @@ p {
     text-transform: uppercase;
     color: #141B22;
     background-color: #21E786;
+    border: none;
 }
 
-.join-us-subscribe-input {
-    font-weight: 400;
+.subscribe-input {
+    font-size: 16px;
+    line-height: 26px;
     text-align: left;
-    background-color: #C2C3C5;
-    opacity: 15%;
+    background-color: #C2C3C526;
+    border: none;
+}
+
+.subscribe-input::placeholder {
+    color: #C2C3C5;
 }
 
 .join-us-socialmedia-item {
