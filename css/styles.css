@@ -1,6 +1,9 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 28px;
+    color: #C2C3C5;
     background-color: #0D0D11;
 }
 
@@ -10,15 +13,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Bakbak One;
-    font-weight: 400;
-    color: #FFFFFF;
-}
-
-h2 {
-    font-size: 44px;
-    line-height: 56px;
-    text-align: center;
+    /*margin: 0;*/
 }
 
 ul,
@@ -30,44 +25,36 @@ a {
     text-decoration: none;
 }
 
-p {
-    font-size: 18px;
-    line-height: 28px;
-    text-align: left;
-    color: #C2C3C5;
-}
-
 .logo-header-link {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 32px;
-    line-height: 30px;
+    line-height: 42px;
     color: #FFFFFF;
     text-align: left;
 }
 
-.header-nav-item-link {
-    font-family: Bakbak One;
+.header-nav-link {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .header-discord-link {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.1em;
+    line-height: 24px;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #141B22;
 }
 
 .header-connect-btn {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     text-transform: uppercase;
     color: #141B22;
     background-color: #21E786;
@@ -76,33 +63,48 @@ p {
 
 /* -------------- HERO SECTION --------------*/
 
-.hero-title {
+.hero-main-title {
     font-size: 72px;
-    line-height: 1.1;
+    line-height: 80px;
+    color: #FFFFFF;
 }
 
 .accent {
     color: #21E786;
 }
 
-.hero-num-item {
-    font-family: Bakbak One;
-    font-size: 44px;
-    line-height: 1.3;
+.hero-main-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
     color: #FFFFFF;
 }
 
+.hero-num-item {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.hero-subhead-item {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+}
+
 .hero-btn-connect {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
     color: #141B22;
     background-color: #21E786;
+    border: none;
 }
 
 .hero-btn-whitelist {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
@@ -118,30 +120,41 @@ p {
 
 }
 
-.card-item-link {
-    font-family: Bakbak One;
+.card-link {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 28px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 /* -------------- ABOUT-US SECTION --------------*/
 
+.section-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 .about-us-item {
     background-color: #141B22;
 }
 
 .about-us-item-title {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
+    font-weight: 400;
     line-height: 30px;
     text-align: left;
     text-transform: uppercase;
+    color: #FFFFFF;    
 }
 
-.about-us-btn {
-    font-family: Bakbak One;
+.read-more-btn {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
@@ -152,20 +165,22 @@ p {
 
 /* -------------- BINABOX-WORK SECTION --------------*/
 
-.binabox-work-item {
+.binabox-card-item {
     background-color: #141B22;
 }
 
-.binabox-work-card-title {
+.binabox-card-title {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 22px;
+    font-weight: 400;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
     color: #21E786;
 }
 
-.binabox-work-card-text {
-    font-family: Bakbak One;
+.binabox-card-text {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
@@ -175,36 +190,33 @@ p {
 
 /* -------------- MAP SECTION --------------*/
 
-.map-block-info {
+.map-info {
     background-color: #FFFFFF0D;
 }
 
-.map-block-describe-title {
+.map-describe-title {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
+    font-weight: 400;
     line-height: 44px;
     text-align: left;
     text-transform: uppercase;
+    color: #FFFFFF;    
 }
 
-.map-block-btn {
-    font-family: Bakbak One;
-    font-size: 16px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #0D0D11;
-    border: 2px solid #21E786;
-}
-
-.map-phase-scrollbar-title {
+.map-pagination-title {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     color: #888B8E;
-    ;
 }
 
-.map-block-previous-btn,
-.map-block-next-btn {
+.map-pagination-title:hover,
+.map-pagination-title:focus {
+    color: #FFFFFF;
+}
+
+.map-pagination-btn {
     background-color: transparent;
     border: none;
     color: #888B8E;
@@ -216,24 +228,40 @@ p {
     background-color: #141B22;
 }
 
-.team-item-title {
+.team-title {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
+    font-weight: 400;
     line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;    
+}
+
+.team-text {
     text-align: center;
 }
 
-.team-item-text {
-    text-align: center;
-}
+/* -------------- PARTNERS SECTION --------------*/
+
+
 
 /* -------------- FAQS SECTION --------------*/
 
+.faqs-list {
+    background: #141B22;
+}
+
 .faqs-item {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     line-height: 30px;
     text-align: left;
+}
+
+.faqs-list[open] .faqs-item {
     color: #FFFFFF;
+    border-bottom: 1px solid #434343;
 }
 
 /* -------------- FOOTER SECTION --------------*/
@@ -252,7 +280,7 @@ p {
 }
 
 .join-us-discord-link {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     text-align: left;
@@ -263,7 +291,7 @@ p {
 
 .join-us-whitelist-btn,
 .join-us-subscribe-btn {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -292,7 +320,7 @@ p {
 }
 
 .logo-footer-link {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 22px;
     line-height: 30px;
     text-align: left;
@@ -312,6 +340,273 @@ p {
     text-transform:capitalize;
     color: #C2C3C5;
 }
+
+
+/* -------------- CATALOG PAGE --------------*/
+/* -------------- CATALOG PAGE --------------*/
+/* -------------- CATALOG PAGE --------------*/
+
+
+/* -------------- EXPLORE-COLECTIONS SECTION --------------*/
+
+.hero-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-link {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    color: #888B8E;
+}
+
+.actual {
+    color: #21E786;
+}
+
+/* -------------- CATALOG SECTION --------------*/
+
+/* -------------- catalog header --------------*/
+
+.catalog-header-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.catalog-input {
+    line-height: 26px;
+    text-align: left;
+    background-color: #141B22;
+    border: none;   
+}
+
+.catalog-input ::placeholder {
+    color: #888B8E;
+}
+
+/* -------------- catalog filter --------------*/
+
+.catalog-filter {
+    background-color: #141B22;
+}
+
+.catalog-filter-option {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #F7F7F7;
+    background-color: #141B22;
+    border: 1px solid #41454A;
+}
+
+.catalog-filter-reset-btn {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #21E786;
+    background-color: #141B22;
+    border: none;
+}
+
+/* -------------- catalog range --------------*/
+
+.catalog-range-item {
+    background-color: #FFFFFF0D;
+}
+
+/*.catalog-range-img {
+       
+}
+*/
+.catalog-range-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* -------------- FOOTER SECTION --------------*/
+
+/* -------------- footer-catalog-navigation --------------*/
+
+.footer-catalog-logo-link {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-catalog-logo-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.footer-nav-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /*text-align: center;*/
+    color: #FFFFFF;
+}
+
+/* -------------- CATALOG-ITEM PAGE --------------*/
+/* -------------- CATALOG-ITEM PAGE --------------*/
+/* -------------- CATALOG-ITEM PAGE --------------*/
+
+/* -------------- CATALOG-ITEM SECTION --------------*/
+
+
+
+/* -------------- CATALOG-CARD --------------*/
+
+.card-counter {
+    background-color: #FFFFFF4D;
+}
+
+.card-counter-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.card-counter-quantity {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    line-height: 56px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.card-counter-meaning {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #F6F6F6;
+
+}
+
+.card-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.card-text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card-wrapper {
+    background-color: #141B22;
+}
+
+.card-option {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: #C2C3C5;
+}
+
+.card-meaning {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.card-price { 
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.card-buy-btn {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #141B22;
+    background-color: #21E786;
+    border: none;
+}
+
+.card-socialmedia-link {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    /*text-align: left;*/
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 2px solid #888B8E;
+}
+
+.colections-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.colections-scrollbar-btn {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #21E786;
+}
+
+.colections-scrollbar-btn:hover,
+.colections-scrollbar-btn:focus {
+    color: #141B22;
+    background-color: #21E786;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
