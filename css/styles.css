@@ -699,6 +699,70 @@ a {
     background-color: #141B22;
 }
 
+/* -------------- CONTACT-US PAGE --------------*/
+/* -------------- CONTACT-US PAGE --------------*/
+/* -------------- CONTACT-US PAGE --------------*/
+
+.contact-item {
+    border: 1px solid #434343;
+}
+
+.contact-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.contact-text {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #C2C3C5;
+}
+
+.get-in-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.get-in-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.get-in-input,
+.get-in-textarea {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    background-color: #C2C3C526;
+    border: none;
+}
+
+.get-in-submit-button {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #0D0D11;
+    border: 1px solid #21E786;
+}
+
+
+
+
 
 
 
