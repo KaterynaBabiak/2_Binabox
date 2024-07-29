@@ -139,6 +139,10 @@ a {
     color: #FFFFFF;
 }
 
+.about-us-text {
+    text-align: center;
+}
+
 .about-us-item {
     background-color: #141B22;
 }
@@ -151,6 +155,20 @@ a {
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;    
+}
+
+.about-us-info-subtitle {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.about-us-info-description {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 56px;
+    line-height: 68px;
+    text-align: left;
+    color: #FFFFFF;
+    /*text-shadow: 0px 4px 16px 0px #FFFFFF66;*/
 }
 
 .read-more-btn {
@@ -234,15 +252,20 @@ a {
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #FFFFFF;    
 }
 
 .team-text {
     text-align: center;
+    text-transform: capitalize;
 }
 
 /* -------------- PARTNERS SECTION --------------*/
+
+/*.partner-item:nth-child(2n) {
+    background-color: #141B22;
+}*/
 
 
 
@@ -268,14 +291,10 @@ a {
 
 .join-us-text {
     text-align: center;
-}
-
-.join-us-catalog-text {
-    text-align: center;
     color: #F7F7F9;
 }
 
-.join-us-catalog{
+.join-us{
     background: linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
 }
 
