@@ -139,6 +139,10 @@ a {
     color: #FFFFFF;
 }
 
+.hero-pages {
+    background-color: #141B22;
+}
+
 .about-us-text {
     text-align: center;
 }
@@ -615,10 +619,85 @@ a {
     background-color: #21E786;    
 }
 
+/* -------------- BLOG PAGE --------------*/
+/* -------------- BLOG PAGE --------------*/
+/* -------------- BLOG PAGE --------------*/
 
+.blog-item {
+    background: #141B22;
+}
 
+.blog-card-label {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF;
+    background-color: #21E786B2;  
+}
 
+.blog-card-author,
+.blog-card-date {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #888B8E;
+}
 
+.blog-card-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blog-card-text {
+    font-size: 20px; 
+    line-height: 30px;
+    text-align: left;
+    color: #C2C3C5;   
+}
+
+.blog-card-btn {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blog-prev-button,
+.blog-next-button {
+    color: #FFFFFF;
+    background-color: #0D0D11;
+    border: 1px solid #21E786;
+}
+
+.blog-prev-button:hover,
+.blog-prev-button:focus,
+.blog-next-button:hover,
+.blog-next-button:focus {
+    color: #141B22;
+    background-color: #21E786;
+}
+
+.pagination-button {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #0D0D11;
+    border: 1px solid #141B22;
+}
+
+.pagination-button:active {
+    color: #21E786;
+    background-color: #141B22;
+}
 
 
 
