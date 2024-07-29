@@ -699,6 +699,127 @@ a {
     background-color: #141B22;
 }
 
+/* -------------- BLOG-DETAIL PAGE --------------*/
+/* -------------- BLOG-DETAIL PAGE --------------*/
+/* -------------- BLOG-DETAIL PAGE --------------*/
+
+.blog-detail-card-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: capitalize;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blog-detail-card-author,
+.blog-detail-card-date {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #888B8E;
+}
+
+.blog-detail-card-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.blog-detail-blockquote {
+    background: #21E7861A;
+}
+
+.blog-detail-quote {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.blog-detail-quote-raiting {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #BBBABE;
+}
+
+.blog-detail-quote-name {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blog-detail-subtitle {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.caption-item {
+    background-color: #41454A66;
+}
+
+.caption-link {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+.blog-detail-browsing {
+    background-color: #141B22;
+}
+
+.browsing-label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #888B8E;
+}
+
+.browsing-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+.blog-detail-reply-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.blog-detail-reply-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: #C2C3C5;
+
+}
+
 /* -------------- CONTACT-US PAGE --------------*/
 /* -------------- CONTACT-US PAGE --------------*/
 /* -------------- CONTACT-US PAGE --------------*/
