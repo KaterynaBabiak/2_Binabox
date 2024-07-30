@@ -13,16 +13,34 @@ h3,
 h4,
 h5,
 h6 {
-    /*margin: 0;*/
+    margin: 0;
+}
+
+p {
+    margin: 0;
 }
 
 ul,
 ol,
 li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
+}
+
+/*img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
+
+.container {
+    /*width: 1440px;*/
+    margin-left: auto;
+    margin-right: auto;       
 }
 
 .logo-header-link {
@@ -137,6 +155,7 @@ a {
     line-height: 56px;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 60px;
 }
 
 .hero-pages {
@@ -187,8 +206,47 @@ a {
 
 /* -------------- BINABOX-WORK SECTION --------------*/
 
+.binabox-work {
+    margin-bottom: 100px;
+}
+
+.binabox-card-list {
+    /*display: flex;
+    gap: 30px;*/
+}
+
 .binabox-card-item {
+    text-align: center;
     background-color: #141B22;
+    width: 330px;
+    padding: 30px 26px 26px 26px;
+}
+
+.binabox-card-item::before {
+    display: inline-block;
+    content: "";
+
+    width: 104px;
+    height: 84px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.binabox-card-item.icon-card::before {
+    background-image: url(../img/card.svg);
+}
+
+.binabox-card-item.icon-check::before {
+    background-image: url(../img/check.svg);
+}
+
+.binabox-card-item.icon-money::before {
+    background-image: url(../img/money.svg);
+}
+
+.binabox-card-item.icon-shop::before {
+    background-image: url(../img/shop.svg);
 }
 
 .binabox-card-title {
@@ -246,8 +304,29 @@ a {
 
 /* -------------- OUT-TEAM SECTION --------------*/
 
+.our-team {
+    margin-bottom: 100px;
+}
+
+.team-list {
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;*/
+}
+
 .team-item {
+    text-align: center;
     background-color: #141B22;
+    width: 290px;
+    height: 260px;
+    padding: 40px 20px;
+}
+
+.team-img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 31px;
 }
 
 .team-title {
@@ -255,14 +334,23 @@ a {
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
-    text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;    
 }
 
 .team-text {
-    text-align: center;
     text-transform: capitalize;
+    margin-bottom: 26px;
+}
+
+.team-socialmedia-list {
+    display: inline-flex; 
+    gap: 16px;
+}
+
+.team-socialmedia-icon {
+    fill: #C2C3C5;
+    
 }
 
 /* -------------- PARTNERS SECTION --------------*/
@@ -274,6 +362,10 @@ a {
 
 
 /* -------------- FAQS SECTION --------------*/
+
+.faqs {
+    margin-bottom: 100px;
+}
 
 .faqs-list {
     background: #141B22;
