@@ -50,12 +50,17 @@ figure {
     margin-right: auto;       
 }
 
-.logo-header-link {
+.header .logo-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 32px;
     line-height: 42px;
     color: #FFFFFF;
     text-align: left;
+}
+
+.header .logo-img {
+    width: 36px;
+    height: 40px;
 }
 
 .header-nav-link {
@@ -498,14 +503,24 @@ figure {
     background: linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
 }
 
-.join-us-discord-link {
+.join-us-btn-item {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
     background-color: #5865F2;
+    width: 99px;
+    height: 24px;
+    padding: 12px 24px;
+}
+
+.join-us-discord-link {
+    color: #FFFFFF;
+    width: 99px;
+    height: 24px;
+    display: flex;
+    gap: 8px;
 }
 
 .join-us-whitelist-btn,
@@ -533,24 +548,29 @@ figure {
     color: #C2C3C5;
 }
 
+.join-socialmedia-list {
+    display: flex;
+    gap: 20px;
+}
+
 .join-socialmedia-item {
-    background-color: #C2C3C5;
-    /*opacity: 15%;*/
+    background-color: #C2C3C526;
     width: 27px;
     height: 27px;
     padding: 11px;
 }
 
-.join-socialmedia-icon {
-    color: #FFFFFF;
-}
-
-.logo-footer-link {
+.footer-copyright-part .logo-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 22px;
     line-height: 30px;
     text-align: left;
     color: #FFFFFF;
+}
+
+.footer-copyright-part .logo-img {
+    width: 24px;
+    height: 27px;    
 }
 
 .footer-copyright {
