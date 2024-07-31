@@ -178,8 +178,8 @@ figure {
 /* -------------- ABOUT-US SECTION --------------*/
 
 .about-us {
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/
     margin-bottom: 100px;
 }
 
@@ -202,13 +202,40 @@ figure {
 }
 
 .about-us-text {
-   text-align: center;
+    text-align: center;
     max-width: 930px;
     margin-bottom: 60px;
 }
 
+.about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+
 .about-us-item {
+    position: relative;
     background-color: #141B22;
+    width: 510px;
+    height: 164px;
+    padding: 82px 30px 30px 30px;
+}
+
+.about-us-number {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    /*z-index: -1;*/
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #21E786;
 }
 
 .about-us-item-title {
@@ -219,6 +246,7 @@ figure {
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;    
+    margin-bottom: 26px;
 }
 
 .about-us-info-subtitle {
@@ -404,11 +432,38 @@ figure {
 
 /* -------------- PARTNERS SECTION --------------*/
 
-/*.partner-item:nth-child(2n) {
+.partners {
+    margin-bottom: 100px;
+}
+
+.partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-item {
+    width: 182px;
+    height: 60px;
+    padding: 20px 14px;
+}
+
+.partner-item:nth-child(n+1):nth-child(-n+6):nth-child(even) {
     background-color: #141B22;
-}*/
+}
 
+.partner-item:nth-child(n+7):nth-child(-n+11):nth-child(odd) {
+    background-color: #141B22;
+}
 
+.partner-item:nth-child(n+13):nth-child(-n+24):nth-child(even) {
+    background-color: #141B22;
+}
+
+.partner-img {
+    width: 160px;
+    height: 60px;
+}
 
 /* -------------- FAQS SECTION --------------*/
 
@@ -478,9 +533,16 @@ figure {
     color: #C2C3C5;
 }
 
-.join-us-socialmedia-item {
+.join-socialmedia-item {
     background-color: #C2C3C5;
-    opacity: 15%;
+    /*opacity: 15%;*/
+    width: 27px;
+    height: 27px;
+    padding: 11px;
+}
+
+.join-socialmedia-icon {
+    color: #FFFFFF;
 }
 
 .logo-footer-link {
