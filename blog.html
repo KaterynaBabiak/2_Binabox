@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Binabox</title>
-        <link rel="stylesheet" type="text/css" href="./css/styles.css">
         <link rel="stylesheet" href="./css/modern-normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
     </head>
 <body>
     <header class="header">
@@ -19,39 +19,39 @@
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-item">
-                    <a href="./index.html" class="header-nav-item-link">
+                    <a href="./index.html" class="header-nav-link">
                         home
-                        <img src="./img/" alt="v" class="header-nav-item-img">
+                        <img src="./img/" alt="v" class="header-nav-img">
                     </a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="./about-us.html" class="header-nav-item-link">
+                    <a href="./about-us.html" class="header-nav-link">
                         about
-                        <img src="./img/" alt="v" class="header-nav-item-img">
+                        <img src="./img/" alt="v" class="header-nav-img">
                     </a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="#" class="header-nav-item-link">
+                    <a href="#roadmap" class="header-nav-link">
                         roadmap
-                        <img src="./img/" alt="v" class="header-nav-item-img">
+                        <img src="./img/" alt="v" class="header-nav-img">
                     </a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="./catalog.html" class="header-nav-item-link">
+                    <a href="./catalog.html" class="header-nav-link">
                         collection
-                        <img src="./img/" alt="v" class="header-nav-item-img">
+                        <img src="./img/" alt="v" class="header-nav-img">
                     </a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="./faqs.html" class="header-nav-item-link">
+                    <a href="./faqs.html" class="header-nav-link">
                         faqs
-                        <img src="./img/" alt="v" class="header-nav-item-img">
+                        <img src="./img/" alt="v" class="header-nav-img">
                     </a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="#" class="header-nav-item-link">
+                    <a href="#" class="header-nav-link">
                         pages
-                        <img src="./img/" alt="v" class="header-nav-item-img">
+                        <img src="./img/" alt="v" class="header-nav-img">
                     </a>
                 </li>
             </ul>
@@ -71,162 +71,168 @@
         </div>
     </header>
     <main>
-        <section class="blog-hero">
+        <section class="hero-pages">
             <div class="container">
-                <h1 class="blog-title">OUR BLOG</h1>
-                <nav class="blog-navigation">
-                    <a href="./index.html">HOME</a>
-                    <a href="./blog.html">OUR BLOG</a>
+                <h1 class="hero-title">OUR BLOG</h1>
+                <nav>
+                    <ul class="hero-list">
+                        <li class="hero-item">
+                            <a href="./index.html" class="hero-link">HOME</a>
+                        </li>
+                        <li class="hero-item">
+                            <a href="./blog.html" class="hero-link actual">OUR BLOG</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </section>
         <section class="blog-catalog">
             <div class="container">
                 <h2 hidden>BLOG CATALOG</h2>
-                <ul class="blog-catalog-list">
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">NFT</p>
-                                <img src="./img/" alt="sonic_live" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">SONIC LIVE</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                <ul class="blog-list">
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">NFT</p>
+                                <img src="./img/" alt="sonic_live" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">SONIC LIVE</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">GAMING</p>
-                                <img src="./img/" alt="diego" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">DIEGO</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">GAMING</p>
+                                <img src="./img/" alt="diego" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">DIEGO</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">NFT</p>
-                                <img src="./img/" alt="sonic_live" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">SONIC LIVE</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">NFT</p>
+                                <img src="./img/" alt="sonic_live" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">SONIC LIVE</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">ROBOT</p>
-                                <img src="./img/" alt="cyberpunk" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">CYBERPUNK</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">ROBOT</p>
+                                <img src="./img/" alt="cyberpunk" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">CYBERPUNK</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">ART</p>
-                                <img src="./img/" alt="diego" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">DIEGO</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">ART</p>
+                                <img src="./img/" alt="diego" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">DIEGO</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">LAUCHPAD</p>
-                                <img src="./img/" alt="sonic_live" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">SONIC LIVE</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">LAUCHPAD</p>
+                                <img src="./img/" alt="sonic_live" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">SONIC LIVE</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">METAVERSE</p>
-                                <img src="./img/" alt="sonic_live" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">SONIC LIVE</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">METAVERSE</p>
+                                <img src="./img/" alt="sonic_live" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">SONIC LIVE</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">NFT</p>
-                                <img src="./img/" alt="diego" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">DIEGO</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">NFT</p>
+                                <img src="./img/" alt="diego" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">DIEGO</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
-                    <li class="blog-catalog-item">
-                        <article class="blog-catalog-card">
-                            <a href="#" class="blog-catalog-card-link">
-                                <p class="blog-catalog-label">NFT</p>
-                                <img src="./img/" alt="sonic_live" class="blog-catalog-img">
-                                <p class="blog-catalog-author">TONY NGUYEN</p>
-                                <time datetime="2022-06-20" class="blog-catalog-date">20 Jun 2022</time>
-                                <h3 class="blog-catalog-card-title">SONIC LIVE</h3>
-                                <p class="blog-catalog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
-                                <p class="blog-catalog-card-btn">READ MORE</p>
+                    <li class="blog-item">
+                        <article class="blog-card">
+                            <a href="#" class="blog-card-link">
+                                <p class="blog-card-label">NFT</p>
+                                <img src="./img/" alt="sonic_live" class="blog-card-img">
+                                <p class="blog-card-author">TONY NGUYEN</p>
+                                <time datetime="2022-06-20" class="blog-card-date">20 Jun 2022</time>
+                                <h3 class="blog-card-title">SONIC LIVE</h3>
+                                <p class="blog-card-text">One September 22, 2021 A volutpat nulla eros, nulla ultrices nec nulla imperdiet...</p>
+                                <p class="blog-card-btn">READ MORE</p>
                             </a>
                         </article>
                     </li>
                 </ul>
-                <div class="blog-catalog-pagination">
-                    <button class="blog-catalog-prev-button"> &lt; </button>
-                    <ol class="blog-catalog-pagination-list">
-                        <li class="blog-catalog-pagination-item">
+                <div class="blog-pagination">
+                    <button class="blog-prev-button"> &lt; </button>
+                    <ol class="blog-pagination-list">
+                        <li class="blog-pagination-item">
                             <button class="pagination-button">2</button>
                         </li>
-                        <li class="blog-catalog-pagination-item">
+                        <li class="blog-pagination-item">
                             <button class="pagination-button">3</button>
                         </li>
-                        <li class="blog-catalog-pagination-item">
+                        <li class="blog-pagination-item">
                             <button class="pagination-button">4</button>
                         </li>
-                        <li class="blog-catalog-pagination-item">
+                        <li class="blog-pagination-item">
                             <button class="pagination-button">...</button>
                         </li>
                     </ol>
-                    <button class="blog-catalog-next-button">></button>
+                    <button class="blog-next-button">></button>
                 </div>
             </div>
         </section>
     </main>  
     <footer class="footer">
-        <div class="join-us-catalog">
-            <h2 class="join-us-title">JOIN OUR COMMUNITY</h2>
-            <p class="join-us-catalog-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        <div class="join-us">
+            <h2 class="section-title">JOIN OUR COMMUNITY</h2>
+            <p class="join-us-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <ul class="join-us-btn-list">
                 <li class="join-us-btn-item">
                     <a href="#" class="join-us-discord-link">

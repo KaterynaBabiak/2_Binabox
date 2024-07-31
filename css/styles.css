@@ -1,6 +1,9 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
     font-weight: 400;
+    line-height: 28px;
+    color: #C2C3C5;
     background-color: #0D0D11;
 }
 
@@ -10,64 +13,78 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Bakbak One;
-    font-weight: 400;
-    color: #FFFFFF;
+    margin: 0;
 }
 
-h2 {
-    font-size: 44px;
-    line-height: 56px;
-    text-align: center;
+p {
+    margin: 0;
 }
 
 ul,
 ol,
 li {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
 }
 
-p {
-    font-size: 18px;
-    line-height: 28px;
-    text-align: left;
-    color: #C2C3C5;
+figure {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
-.logo-header-link {
-    font-family: Bakbak One;
+/*img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}*/
+
+.container {
+    /*width: 1440px;*/
+    margin-left: auto;
+    margin-right: auto;       
+}
+
+.header .logo-link {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 32px;
-    line-height: 30px;
+    line-height: 42px;
     color: #FFFFFF;
     text-align: left;
 }
 
-.header-nav-item-link {
-    font-family: Bakbak One;
+.header .logo-img {
+    width: 36px;
+    height: 40px;
+}
+
+.header-nav-link {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 .header-discord-link {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.1em;
+    line-height: 24px;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #141B22;
 }
 
 .header-connect-btn {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     text-transform: uppercase;
     color: #141B22;
     background-color: #21E786;
@@ -76,33 +93,52 @@ p {
 
 /* -------------- HERO SECTION --------------*/
 
-.hero-title {
+.hero {
+    margin-bottom: 60px;
+}
+
+.hero-main-title {
     font-size: 72px;
-    line-height: 1.1;
+    line-height: 80px;
+    color: #FFFFFF;
 }
 
 .accent {
     color: #21E786;
 }
 
-.hero-num-item {
-    font-family: Bakbak One;
-    font-size: 44px;
-    line-height: 1.3;
+.hero-main-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
     color: #FFFFFF;
 }
 
+.hero-num-item {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    line-height: 56px;
+    color: #FFFFFF;
+}
+
+.hero-subhead-item {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+}
+
 .hero-btn-connect {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
     color: #141B22;
     background-color: #21E786;
+    border: none;
 }
 
 .hero-btn-whitelist {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
@@ -113,35 +149,127 @@ p {
 
 /* -------------- CARD-BAR SECTION --------------*/
 
-.card-item {
-    background: #FFFFFF0D;
-
+.card-bar {
+    margin-bottom: 100px;
 }
 
-.card-item-link {
-    font-family: Bakbak One;
+.card-list {
+    display: flex;
+    gap: 30px;
+}
+
+.card-item {
+    background: #FFFFFF0D;
+    width: 290px;
+    height: 338px;
+    padding: 20px;
+}
+
+.card-item-img {
+    width: 290px;
+    height: 290px;
+    margin-bottom: 20px;
+}
+
+.card-caption {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 28px;
+    text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 
 /* -------------- ABOUT-US SECTION --------------*/
 
-.about-us-item {
+.about-us {
+    /*display: flex;
+    justify-content: center;*/
+    margin-bottom: 100px;
+}
+
+.section-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.section-title.about {
+    margin-bottom: 16px;
+}
+
+.hero-pages {
     background-color: #141B22;
 }
 
+.about-us-text {
+    text-align: center;
+    max-width: 930px;
+    margin-bottom: 60px;
+}
+
+.about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+
+.about-us-item {
+    position: relative;
+    background-color: #141B22;
+    width: 510px;
+    height: 164px;
+    padding: 82px 30px 30px 30px;
+}
+
+.about-us-number {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    /*z-index: -1;*/
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #21E786;
+}
+
 .about-us-item-title {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
+    font-weight: 400;
     line-height: 30px;
     text-align: left;
     text-transform: uppercase;
+    color: #FFFFFF;    
+    margin-bottom: 26px;
 }
 
-.about-us-btn {
-    font-family: Bakbak One;
+.about-us-info-subtitle {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.about-us-info-description {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 56px;
+    line-height: 68px;
+    text-align: left;
+    color: #FFFFFF;
+    /*text-shadow: 0px 4px 16px 0px #FFFFFF66;*/
+}
+
+.read-more-btn {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
@@ -152,20 +280,65 @@ p {
 
 /* -------------- BINABOX-WORK SECTION --------------*/
 
-.binabox-work-item {
-    background-color: #141B22;
+.binabox-work {
+    margin-bottom: 100px;
 }
 
-.binabox-work-card-title {
+.binabox-card-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /*display: flex;
+    gap: 30px;*/
+}
+
+.binabox-card-item {
+    text-align: center;
+    background-color: #141B22;
+    width: 276px;
+    height: 160px;
+    padding: 30px 26px 26px 26px;
+}
+
+.binabox-card-item::before {
+    display: inline-block;
+    content: "";
+
+    width: 96px;
+    height: 76px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.binabox-card-item.icon-card::before {
+    background-image: url(../img/card.svg);
+}
+
+.binabox-card-item.icon-check::before {
+    background-image: url(../img/check.svg);
+}
+
+.binabox-card-item.icon-money::before {
+    background-image: url(../img/money.svg);
+}
+
+.binabox-card-item.icon-shop::before {
+    background-image: url(../img/shop.svg);
+}
+
+.binabox-card-title {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 22px;
+    font-weight: 400;
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
     color: #21E786;
 }
 
-.binabox-work-card-text {
-    font-family: Bakbak One;
+.binabox-card-text {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
@@ -175,36 +348,33 @@ p {
 
 /* -------------- MAP SECTION --------------*/
 
-.map-block-info {
+.map-info {
     background-color: #FFFFFF0D;
 }
 
-.map-block-describe-title {
+.map-describe-title {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
+    font-weight: 400;
     line-height: 44px;
     text-align: left;
     text-transform: uppercase;
+    color: #FFFFFF;    
 }
 
-.map-block-btn {
-    font-family: Bakbak One;
-    font-size: 16px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #0D0D11;
-    border: 2px solid #21E786;
-}
-
-.map-phase-scrollbar-title {
+.map-pagination-title {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     color: #888B8E;
-    ;
 }
 
-.map-block-previous-btn,
-.map-block-next-btn {
+.map-pagination-title:hover,
+.map-pagination-title:focus {
+    color: #FFFFFF;
+}
+
+.map-pagination-btn {
     background-color: transparent;
     border: none;
     color: #888B8E;
@@ -212,58 +382,150 @@ p {
 
 /* -------------- OUT-TEAM SECTION --------------*/
 
+.our-team {
+    margin-bottom: 100px;
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;*/
+}
+
 .team-item {
+    text-align: center;
+    background-color: #141B22;
+    width: 290px;
+    height: 260px;
+    padding: 40px 20px;
+}
+
+.team-img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 31px;
+}
+
+.team-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #FFFFFF;    
+}
+
+.team-text {
+    text-transform: capitalize;
+    margin-bottom: 26px;
+}
+
+.team-socialmedia-list {
+    display: inline-flex; 
+    gap: 16px;
+}
+
+.team-socialmedia-icon {
+    fill: #C2C3C5;
+    
+}
+
+/* -------------- PARTNERS SECTION --------------*/
+
+.partners {
+    margin-bottom: 100px;
+}
+
+.partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.partner-item {
+    width: 182px;
+    height: 60px;
+    padding: 20px 14px;
+}
+
+.partner-item:nth-child(n+1):nth-child(-n+6):nth-child(even) {
     background-color: #141B22;
 }
 
-.team-item-title {
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
+.partner-item:nth-child(n+7):nth-child(-n+11):nth-child(odd) {
+    background-color: #141B22;
 }
 
-.team-item-text {
-    text-align: center;
+.partner-item:nth-child(n+13):nth-child(-n+24):nth-child(even) {
+    background-color: #141B22;
+}
+
+.partner-img {
+    width: 160px;
+    height: 60px;
 }
 
 /* -------------- FAQS SECTION --------------*/
 
+.faqs {
+    margin-bottom: 100px;
+}
+
+.faqs-list {
+    background: #141B22;
+}
+
 .faqs-item {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     line-height: 30px;
     text-align: left;
+}
+
+.faqs-list[open] .faqs-item {
     color: #FFFFFF;
+    border-bottom: 1px solid #434343;
 }
 
 /* -------------- FOOTER SECTION --------------*/
 
 .join-us-text {
     text-align: center;
-}
-
-.join-us-catalog-text {
-    text-align: center;
     color: #F7F7F9;
 }
 
-.join-us-catalog{
+.join-us{
     background: linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
 }
 
-.join-us-discord-link {
-    font-family: Bakbak One;
+.join-us-btn-item {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
     background-color: #5865F2;
+    width: 99px;
+    height: 24px;
+    padding: 12px 24px;
+}
+
+.join-us-discord-link {
+    color: #FFFFFF;
+    width: 99px;
+    height: 24px;
+    display: flex;
+    gap: 8px;
 }
 
 .join-us-whitelist-btn,
 .join-us-subscribe-btn {
-    font-family: Bakbak One;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -286,17 +548,29 @@ p {
     color: #C2C3C5;
 }
 
-.join-us-socialmedia-item {
-    background-color: #C2C3C5;
-    opacity: 15%;
+.join-socialmedia-list {
+    display: flex;
+    gap: 20px;
 }
 
-.logo-footer-link {
-    font-family: Bakbak One;
+.join-socialmedia-item {
+    background-color: #C2C3C526;
+    width: 27px;
+    height: 27px;
+    padding: 11px;
+}
+
+.footer-copyright-part .logo-link {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 22px;
     line-height: 30px;
     text-align: left;
     color: #FFFFFF;
+}
+
+.footer-copyright-part .logo-img {
+    width: 24px;
+    height: 27px;    
 }
 
 .footer-copyright {
@@ -312,6 +586,533 @@ p {
     text-transform:capitalize;
     color: #C2C3C5;
 }
+
+
+/* -------------- CATALOG PAGE --------------*/
+/* -------------- CATALOG PAGE --------------*/
+/* -------------- CATALOG PAGE --------------*/
+
+
+/* -------------- EXPLORE-COLECTIONS SECTION --------------*/
+
+.hero-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.hero-link {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    color: #888B8E;
+}
+
+.actual {
+    color: #21E786;
+}
+
+/* -------------- CATALOG SECTION --------------*/
+
+/* -------------- catalog header --------------*/
+
+.catalog-header-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.catalog-input {
+    line-height: 26px;
+    text-align: left;
+    background-color: #141B22;
+    border: none;   
+}
+
+.catalog-input ::placeholder {
+    color: #888B8E;
+}
+
+/* -------------- catalog filter --------------*/
+
+.catalog-filter {
+    background-color: #141B22;
+}
+
+.catalog-filter-option {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #F7F7F7;
+    background-color: #141B22;
+    border: 1px solid #41454A;
+}
+
+.catalog-filter-reset-btn {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #21E786;
+    background-color: #141B22;
+    border: none;
+}
+
+/* -------------- catalog range --------------*/
+
+.catalog-range-item {
+    background-color: #FFFFFF0D;
+}
+
+/*.catalog-range-img {
+       
+}
+*/
+.catalog-range-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    /*text-align: center;*/
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* -------------- FOOTER SECTION --------------*/
+
+/* -------------- footer-catalog-navigation --------------*/
+
+.footer-catalog-logo-link {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-catalog-logo-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.footer-nav-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /*text-align: center;*/
+    color: #FFFFFF;
+}
+
+/* -------------- CATALOG-ITEM PAGE --------------*/
+/* -------------- CATALOG-ITEM PAGE --------------*/
+/* -------------- CATALOG-ITEM PAGE --------------*/
+
+/* -------------- CATALOG-ITEM SECTION --------------*/
+
+
+
+/* -------------- CATALOG-CARD --------------*/
+
+.card-counter {
+    background-color: #FFFFFF4D;
+}
+
+.card-counter-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.card-counter-quantity {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    line-height: 56px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.card-counter-meaning {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #F6F6F6;
+
+}
+
+.card-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.card-text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card-wrapper {
+    background-color: #141B22;
+}
+
+.card-option {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    color: #C2C3C5;
+}
+
+.card-meaning {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.card-price { 
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.card-buy-btn {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #141B22;
+    background-color: #21E786;
+    border: none;
+}
+
+.card-socialmedia-link {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    /*text-align: left;*/
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 2px solid #888B8E;
+}
+
+.colections-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.colections-scrollbar-btn {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #21E786;
+}
+
+.colections-scrollbar-btn:hover,
+.colections-scrollbar-btn:focus {
+    color: #141B22;
+    background-color: #21E786;    
+}
+
+/* -------------- BLOG PAGE --------------*/
+/* -------------- BLOG PAGE --------------*/
+/* -------------- BLOG PAGE --------------*/
+
+.blog-item {
+    background: #141B22;
+}
+
+.blog-card-label {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF;
+    background-color: #21E786B2;  
+}
+
+.blog-card-author,
+.blog-card-date {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #888B8E;
+}
+
+.blog-card-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blog-card-text {
+    font-size: 20px; 
+    line-height: 30px;
+    text-align: left;
+    color: #C2C3C5;   
+}
+
+.blog-card-btn {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blog-prev-button,
+.blog-next-button {
+    color: #FFFFFF;
+    background-color: #0D0D11;
+    border: 1px solid #21E786;
+}
+
+.blog-prev-button:hover,
+.blog-prev-button:focus,
+.blog-next-button:hover,
+.blog-next-button:focus {
+    color: #141B22;
+    background-color: #21E786;
+}
+
+.pagination-button {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #0D0D11;
+    border: 1px solid #141B22;
+}
+
+.pagination-button:active {
+    color: #21E786;
+    background-color: #141B22;
+}
+
+/* -------------- BLOG-DETAIL PAGE --------------*/
+/* -------------- BLOG-DETAIL PAGE --------------*/
+/* -------------- BLOG-DETAIL PAGE --------------*/
+
+.blog-detail-card-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-transform: capitalize;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blog-detail-card-author,
+.blog-detail-card-date {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #888B8E;
+}
+
+.blog-detail-card-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.blog-detail-blockquote {
+    background: #21E7861A;
+}
+
+.blog-detail-quote {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.blog-detail-quote-raiting {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #BBBABE;
+}
+
+.blog-detail-quote-name {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.blog-detail-subtitle {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.caption-item {
+    background-color: #41454A66;
+}
+
+.caption-link {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+.blog-detail-browsing {
+    background-color: #141B22;
+}
+
+.browsing-label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #888B8E;
+}
+
+.browsing-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize;
+    color: #FFFFFF;
+
+}
+
+.blog-detail-reply-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.blog-detail-reply-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: #C2C3C5;
+
+}
+
+/* -------------- CONTACT-US PAGE --------------*/
+/* -------------- CONTACT-US PAGE --------------*/
+/* -------------- CONTACT-US PAGE --------------*/
+
+.contact-item {
+    border: 1px solid #434343;
+}
+
+.contact-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.contact-text {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #C2C3C5;
+}
+
+.get-in-title {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.get-in-text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.get-in-input,
+.get-in-textarea {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    background-color: #C2C3C526;
+    border: none;
+}
+
+.get-in-submit-button {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #0D0D11;
+    border: 1px solid #21E786;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
