@@ -93,10 +93,13 @@
         <section class="hero-pages">
             <div class="container">
                 <h1 class="hero-title">HOW CAN WE HELP?</h1>
-                <nav>
+                <nav class="hero-navigation">
                     <ul class="hero-list">
                         <li class="hero-item">
                             <a href="./index.html" class="hero-link">HOME</a>
+                        </li>
+                        <li class="hero-item">
+                            <div class="vertical-line"></div>
                         </li>
                         <li class="hero-item">
                             <a href="./faqs.html" class="hero-link actual">FAQS</a>
@@ -107,39 +110,42 @@
         </section>
         <section class="faqs">
             <div class="container">
-                <h2 class="section-title">FAQS</h2>
-                <details class="faqs-list">
-                    <summary class="faqs-item">
-                        What are the NFTs?
-                    </summary>
-                    Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.
-                </details>
-                <details class="faqs-list">
-                    <summary class="faqs-item">
-                        How do i get NFTs?
-                    </summary>
-                </details>
-                <details class="faqs-list">
-                    <summary class="faqs-item">
-                        How can we buy your NFTs?
-                    </summary>
-                </details>
-                <details class="faqs-list">
-                    <summary class="faqs-item">
-                        Who are the team behind the project?
-                    </summary>
-                </details>
+                <div class="faqs-wrap">
+                    <details class="faqs-list">
+                        <summary class="faqs-item">
+                            What are the NFTs?
+                        </summary>
+                        <p class="faqs-item-info">Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus.</p>
+                    </details>
+                    <details class="faqs-list">
+                        <summary class="faqs-item">
+                            How do i get NFTs?
+                        </summary>
+                    </details>
+                    <details class="faqs-list">
+                        <summary class="faqs-item">
+                            How can we buy your NFTs?
+                        </summary>
+                    </details>
+                    <details class="faqs-list">
+                        <summary class="faqs-item">
+                            Who are the team behind the project?
+                        </summary>
+                    </details>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="join-us">
-            <h2 class="section-title">JOIN OUR COMMUNITY</h2>
-            <p class="join-us-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            <h2 class="section-title join">JOIN OUR COMMUNITY</h2>
+            <p class="join-us-text white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <ul class="join-us-btn-list">
                 <li class="join-us-btn-item">
                     <a href="#" class="join-us-discord-link">
-                        <img src="./img/" alt="icon-discord">
+                        <svg class="join-socialmedia-icon" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-discord"></use>
+                        </svg>
                         discord
                     </a>
                 </li>
@@ -150,10 +156,10 @@
                 </li>
             </ul>
         </div>   
-        <div class="footer-catalog-navigation">
-            <div class="footer-catalog-logo">
-                <a href="" class="footer-catalog-logo-link">
-                    <img src="./img/" alt="logo" class="footer-catalog-logo-img">
+        <div class="footer-navigation">
+            <div class="footer-logo">
+                <a href="#" class="logo-link">
+                    <img src="./img/logo.webp" alt="Binabox logo" class="logo-img">
                     BINABOX
                 </a>
                 <p class="footer-catalog-logo-text">We are the best way to check the rarity of NFT collection.</p>
@@ -223,35 +229,47 @@
         </div>     
         <div class="footer-bottom">
             <p lass="footer-copyright">BINABOX 2022 - ALL rights reserved</p>
-            <ul class="footer-bottom-socialmedia-list">
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="twitter" class="footer-bottom-socialmedia-img">
+            <ul class="footer-socialmedia-list">
+                <li class="footer-socialmedia-item">
+                    <a href="#" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-twitter"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="facebook" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://www.facebook.com" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-facebook"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="telegram" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://t.me" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-telegram-1"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="youtube" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://www.youtube.com/" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-youtube"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="tiktok" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://www.tiktok.com" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-tiktok"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="discord" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://discord.com" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-discord"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
