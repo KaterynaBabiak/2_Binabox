@@ -38,6 +38,13 @@ figure {
     margin-inline-end: 0;
 }
 
+dl {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
 /*img {
     display: block;
     max-width: 100%;
@@ -1031,8 +1038,36 @@ figure {
 
 /* -------------- CATALOG-CARD --------------*/
 
+.card {
+    margin-bottom: 100px;
+}
+
+.card-img {
+    width: 690px;
+    height: 690px;
+    background: #C2C3C5;
+}
+
 .card-counter {
     background-color: #FFFFFF4D;
+    width: 460px;
+    /*display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;*/
+    padding: 18px 74px 20px 74px;
+}
+
+.card-counter-info {
+    display: flex;
+    gap: 22px;
+}
+
+.counter-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-counter-title {
@@ -1040,15 +1075,16 @@ figure {
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
-    text-align: left;
+    text-align: center;
     color: #FFFFFF;
+    margin-bottom: 12px;
 }
 
 .card-counter-quantity {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
     line-height: 56px;
-    text-align: left;
+    /*text-align: left;*/
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -1057,10 +1093,23 @@ figure {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
     line-height: 28px;
-    text-align: left;
+    /*text-align: left;*/
     text-transform: uppercase;
     color: #F6F6F6;
+    margin-inline-start: 0px;
+}
 
+.counter-separator {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.card-filter {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 23px;
+    column-gap: 16px;
 }
 
 .card-title {
@@ -1071,15 +1120,24 @@ figure {
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 24px;
 }
 
 .card-text {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.card-filter {
+    margin-bottom: 30px;
 }
 
 .card-wrapper {
     background-color: #141B22;
+    width: 156px;
+    height: 60px;
+    padding: 20px;
 }
 
 .card-option {
@@ -1095,6 +1153,7 @@ figure {
     line-height: 30px;
     text-align: left;
     color: #FFFFFF;
+    margin-inline-start: 0;
 }
 
 .card-price { 
@@ -1102,6 +1161,7 @@ figure {
     font-size: 36px;
     line-height: 44px;
     color: #FFFFFF;
+    margin-bottom: 40px;
 }
 
 .card-buy-btn {
@@ -1114,16 +1174,31 @@ figure {
     color: #141B22;
     background-color: #21E786;
     border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 228px;
+    margin-bottom: 24px;
+}
+
+
+
+.card-socialmedia-list {
+    display: flex;
+    gap: 40px; 
 }
 
 .card-socialmedia-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
-    /*text-align: left;*/
     text-transform: uppercase;
     color: #FFFFFF;
     border: 2px solid #888B8E;
+    padding: 16px 76px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .colections-title {
@@ -1133,18 +1208,50 @@ figure {
     line-height: 56px;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 40px;
 }
 
-.colections-scrollbar-btn {
+
+
+.catalog-collections {
+    margin-bottom: 100px;
+}
+
+.catalog-collections-range .card-list {
+    margin-bottom: 30px;
+}
+
+.scrollbar-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.scrollbar-btn {
+    display: flex;
+    align-items: center;
     color: #FFFFFF;
     background-color: transparent;
     border: 1px solid #21E786;
+    width: 48px;
+    height: 48px;
+    padding: 11px;
 }
 
-.colections-scrollbar-btn:hover,
-.colections-scrollbar-btn:focus {
+.scrollbar-btn:hover,
+.scrollbar-btn:focus {
     color: #141B22;
     background-color: #21E786;    
+}
+
+.scrollbar-icon {
+    fill: #FFFFFF;
+    stroke: #FFFFFF;
+}
+
+.scrollbar-icon:hover {
+    fill: #141B22;
+    stroke: #141B22;
 }
 
 /* -------------- BLOG PAGE --------------*/
