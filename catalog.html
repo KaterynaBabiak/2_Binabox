@@ -12,8 +12,8 @@
     </head>
 <body>
     <header class="header">
-        <a href="#" class="logo-header-link">
-            <img src="./img/" alt="logo" class="logo">
+        <a href="#" class="logo-link">
+            <img src="./img/logo.webp" alt="Binabox logo" class="logo-img">
             BINABOX
         </a>
         <nav class="header-nav">
@@ -21,51 +21,69 @@
                 <li class="header-nav-item">
                     <a href="./index.html" class="header-nav-link">
                         home
-                        <img src="./img/" alt="v" class="header-nav-img">
+                        <svg class="icon-arrow-down" width=24 height="24">
+                            <use href="./img/sprite.svg#icon-arrow-down"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="header-nav-item">
                     <a href="./about-us.html" class="header-nav-link">
                         about
-                        <img src="./img/" alt="v" class="header-nav-img">
+                        <svg class="icon-arrow-down" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-arrow-down"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="header-nav-item">
-                    <a href="#" class="header-nav-link">
+                    <a href="#roadmap" class="header-nav-link">
                         roadmap
-                        <img src="./img/" alt="v" class="header-nav-img">
+                        <svg class="icon-arrow-down" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-arrow-down"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="header-nav-item">
                     <a href="./catalog.html" class="header-nav-link">
                         collection
-                        <img src="./img/" alt="v" class="header-nav-img">
+                        <svg class="icon-arrow-down" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-arrow-down"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="header-nav-item">
                     <a href="./faqs.html" class="header-nav-link">
                         faqs
-                        <img src="./img/" alt="v" class="header-nav-img">
+                        <svg class="icon-arrow-down" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-arrow-down"></use>
+                        </svg>
                     </a>
                 </li>
                 <li class="header-nav-item">
                     <a href="#" class="header-nav-link">
                         pages
-                        <img src="./img/" alt="v" class="header-nav-img">
+                        <svg class="icon-arrow-down" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-arrow-down"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
         </nav>
-        <div>
-            <button>
-                <img src="./img/" alt="mode_icon">
+        <div class="connect-wrapper">
+            <button class="mode-btn">
+                <svg class="mode-icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-sun"></use>
+                </svg>
             </button>
-            <a href="#" class="header-discord-link">
-                <img src="./img/" alt="discord_icon">
+            <a href="https://discord.com" target="_blank" class="header-discord-link">
+                <svg class="header-discord-icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-discord"></use>
+                </svg>
                 discord
             </a>
             <button type="button" class="header-connect-btn">
-                <img src="./img/" alt="connect_icon" class="header-connect-btn-img">>
+                <svg class="header-connect-icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-connect"></use>
+                </svg>
                 connect
             </button>
         </div>
@@ -73,10 +91,13 @@
     <main>
         <section class="hero-pages">
             <h1 class="hero-title">EXPLORE COLECTIONS</h1>
-            <nav>
+            <nav class="hero-navigation">
                 <ul class="hero-list">
                     <li class="hero-item">
                         <a href="./index.html" class="hero-link">HOME</a>
+                    </li class="hero-item">
+                    <li class="hero-item">
+                        <div class="vertical-line"></div>
                     </li>
                     <li class="hero-item">
                         <a href="./catalog.html" class="hero-link actual">COLLECTIONS</a>
@@ -87,18 +108,38 @@
         <section class="catalog">
             <div class="catalog-header">
                 <h2 class="catalog-header-title">All Items</h2>
-                <input type="text" placeholder="Search NFT" class="catalog-input">
+                <span>
+                    <input type="text" placeholder="Search NFT" class="catalog-input">
+                    <svg class="search" width="20" height="20">
+                        <use href="./img/sprite.svg#icon-search"></use>
+                    </svg>
+                </span>
             </div>
             <div class="catalog-filter">
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                        <button type="button" class="catalog-filter-option">King<img src="./img/" alt="x" class=""></button>
+                        <button type="button" class="catalog-filter-option">
+                            King
+                            <svg class="filter-icon" width="24" height="24">
+                                <use href="./img/sprite.svg#icon-close"></use>
+                            </svg>
+                        </button>
                     </li>
                     <li class="catalog-filter-item">
-                        <button type="button" class="catalog-filter-option">Mix<img src="./img/" alt="x" class=""></button>
+                        <button type="button" class="catalog-filter-option">
+                            Mix
+                            <svg class="filter-icon" width="24" height="24">
+                                <use href="./img/sprite.svg#icon-close"></use>
+                            </svg>
+                        </button>
                     </li>
                     <li class="catalog-filter-item">
-                        <button type="button" class="catalog-filter-option">Skacura<img src="./img/" alt="x" class=""></button>
+                        <button type="button" class="catalog-filter-option">
+                            Skacura
+                            <svg class="filter-icon" width="24" height="24">
+                                <use href="./img/sprite.svg#icon-close"></use>
+                            </svg>
+                        </button>
                     </li>
                     <li class="catalog-filter-item-reset">
                         <button type="button" class="catalog-filter-reset-btn">Clear All</button>
@@ -107,58 +148,76 @@
             </div>
             <div class="catalog-range">
                 <ul class="catalog-range-list">
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/face.webp" alt="woman surreal face digital artwork" class="card-item-img">
+                                <figcaption class="card-caption">sKISIRS#2</figcaption>
+                            </figure> 
                         </a>
                     </li>
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/skeleton.webp" alt="human skeleton surrounded by a thick green fog" class="card-item-img">
+                                <figcaption class="card-caption">sKELATON #01</figcaption>
+                            </figure>
                         </a>
                     </li>
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/cat.webp" alt="digital cat with green eyes" class="card-item-img">
+                                <figcaption class="card-caption">MEECAT #02</figcaption>
+                            </figure> 
                         </a>
                     </li>
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/scissors.webp" alt="metal scissors on a green fabric surface" class="card-item-img">
+                                <figcaption class="card-caption">SPOTIOR #03</figcaption>
+                            </figure>
                         </a>
                     </li>
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/card.webp" alt="playing card with a glowing green border and intricate patterns" class="card-item-img">
+                                <figcaption class="card-caption">sKISIRS#2</figcaption>
+                            </figure>
                         </a>
                     </li>
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/gaming-device.webp" alt="a futuristic handheld gaming console" class="card-item-img">
+                                <figcaption class="card-caption">sKISIRS#2</figcaption>
+                            </figure>
                         </a>
                     </li>
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/gorilla.webp" alt="" class="card-item-img">
+                                <figcaption class="card-caption">sKISIRS#2</figcaption>
+                            </figure>
                         </a>
                     </li>
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/dinosaur.webp" alt="" class="card-item-img">
+                                <figcaption class="card-caption">sKISIRS#2</figcaption>
+                            </figure>
                         </a>
                     </li>
-                    <li class="catalog-range-item">
-                        <a href="#" class="catalog-range-link">
-                            <img src="./img/" alt="item-img" class="catalog-range-img">
-                            <p class="catalog-range-title">sKISIRS #02</p>
+                    <li class="card-item">
+                        <a href="#" class="card-link">
+                            <figure>
+                                <img src="./img/duck.webp" alt="" class="card-item-img">
+                                <figcaption class="card-caption">sKISIRS#2</figcaption>
+                            </figure>
                         </a>
                     </li>
                 </ul>
@@ -167,12 +226,14 @@
     </main>
     <footer class="footer">
         <div class="join-us">
-            <h2 class="section-title">JOIN OUR COMMUNITY</h2>
+            <h2 class="section-title join">JOIN OUR COMMUNITY</h2>
             <p class="join-us-text white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <ul class="join-us-btn-list">
                 <li class="join-us-btn-item">
                     <a href="#" class="join-us-discord-link">
-                        <img src="./img/" alt="icon-discord">
+                        <svg class="join-socialmedia-icon" width="24" height="24">
+                            <use href="./img/sprite.svg#icon-discord"></use>
+                        </svg>
                         discord
                     </a>
                 </li>
@@ -183,10 +244,10 @@
                 </li>
             </ul>
         </div>   
-        <div class="footer-catalog-navigation">
-            <div class="footer-catalog-logo">
-                <a href="" class="footer-catalog-logo-link">
-                    <img src="./img/" alt="logo" class="footer-catalog-logo-img">
+        <div class="footer-navigation">
+            <div class="footer-logo">
+                <a href="#" class="logo-link">
+                    <img src="./img/logo.webp" alt="Binabox logo" class="logo-img">
                     BINABOX
                 </a>
                 <p class="footer-catalog-logo-text">We are the best way to check the rarity of NFT collection.</p>
@@ -256,35 +317,47 @@
         </div>     
         <div class="footer-bottom">
             <p lass="footer-copyright">BINABOX 2022 - ALL rights reserved</p>
-            <ul class="footer-bottom-socialmedia-list">
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="twitter" class="footer-bottom-socialmedia-img">
+            <ul class="footer-socialmedia-list">
+                <li class="footer-socialmedia-item">
+                    <a href="#" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-twitter"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="facebook" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://www.facebook.com" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-facebook"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="telegram" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://t.me" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-telegram-1"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="youtube" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://www.youtube.com/" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-youtube"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="tiktok" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://www.tiktok.com" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-tiktok"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="footer-bottom-socialmedia-item">
-                    <a href="#" class="footer-bottom-socialmedia-link">
-                        <img src="./img/" alt="discord" class="footer-bottom-socialmedia-img">
+                <li class="footer-socialmedia-item">
+                    <a href="https://discord.com" target="_blank" class="footer-socialmedia-link">
+                        <svg class="footer-socialmedia-icon" width="20" height="20">
+                            <use href="./img/sprite.svg#icon-discord"></use>
+                        </svg>
                     </a>
                 </li>
             </ul>
