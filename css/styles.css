@@ -1313,6 +1313,7 @@ dl {
     background-color: #21E786B2;  
     padding: 8px 10px;
     width: fit-content;
+    height: fit-content;
 }
 
 .blog-card-img {
@@ -1444,6 +1445,24 @@ dl {
 /* -------------- BLOG-DETAIL PAGE --------------*/
 /* -------------- BLOG-DETAIL PAGE --------------*/
 
+.blog-detail {
+    margin-bottom: 100px;
+}
+
+.blog-detail-card {
+    width: 1020px;
+}
+
+.blog-detail-card.main {
+    margin-bottom: 24px;
+}
+
+.blog-detail-main-img {
+    width: 100%;
+    height: 557px;
+    margin-bottom: 30px;
+}
+
 .blog-detail-card-title {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
@@ -1452,6 +1471,36 @@ dl {
     text-transform: capitalize;
     text-align: left;
     color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.detail-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-detail-card .blog-card-wrap {
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.blog-detail-card-author::before,
+.blog-detail-card-date::before {
+    display: block;
+    content: "";
+
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blog-detail-card-author.icon-card::before {
+    background-image: url(/img/author.svg);
+}
+
+.blog-detail-card-date.icon-card::before {
+    background-image: url(/img/calendar.svg)
 }
 
 .blog-detail-card-author,
@@ -1462,6 +1511,8 @@ dl {
     line-height: 30px;
     text-align: left;
     color: #888B8E;
+    display: flex;
+    gap: 6px;
 }
 
 .blog-detail-card-text {
@@ -1472,6 +1523,11 @@ dl {
 
 .blog-detail-blockquote {
     background: #21E7861A;
+    border-left: 8px solid #21E786;
+    text-transform: capitalize;
+    padding: 26px 37px 26px 32px;
+    width: 943px;
+    margin-bottom: 40px;
 }
 
 .blog-detail-quote {
@@ -1480,7 +1536,26 @@ dl {
     line-height: 30px;
     text-align: left;
     color: #FFFFFF;
+    margin-inline-start: 0px;
+}
 
+.raiting {
+    display: flex; 
+}
+
+.raiting::before {
+    display: block;
+    content: "";
+
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 4px;
+}
+
+.raiting.icon-card::before {
+    background-image: url(/img/star.svg)
 }
 
 .blog-detail-quote-raiting {
@@ -1488,6 +1563,7 @@ dl {
     line-height: 22px;
     text-align: left;
     color: #BBBABE;
+    margin-right: 8px;
 }
 
 .blog-detail-quote-name {
@@ -1496,6 +1572,29 @@ dl {
     line-height: 24px;
     text-align: left;
     color: #FFFFFF;
+}
+
+.blog-detail-card.secondary {
+    margin-bottom: 20px;
+}
+
+.blog-detail-card .blog-detail-card-title {
+    margin-bottom: 12px;
+}
+
+.img-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.blog-detail-img {
+    width: 495px;
+    height: 390px;
+}
+
+.blog-detail-card {
+    margin-bottom: 24px;
 }
 
 .blog-detail-subtitle {
@@ -1507,8 +1606,27 @@ dl {
     color: #FFFFFF;
 }
 
+.blog-detail-tags {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.blog-detail-caption,
+.blog-detail-share {
+    display: flex;
+    gap: 12px;
+    /*align-items: center;*/
+}
+
+.caption-list,
+.share-list {
+    display: flex;
+    gap: 12px;
+}
+
 .caption-item {
-    background-color: #41454A66;
+    line-height: 18px;
 }
 
 .caption-link {
@@ -1517,13 +1635,24 @@ dl {
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
+    background-color: #41454A66;
+    /*padding: 8px 12px;*/  
 }
 
-
-
+.blog-detail-articles {
+    display: flex;
+    justify-content: space-between;
+}
 
 .blog-detail-browsing {
     background-color: #141B22;
+    width: 371px;
+    padding: 20px;
+}
+
+.browsing-link {
+    display: flex;
+    gap: 16px;
 }
 
 .browsing-label {
@@ -1532,6 +1661,7 @@ dl {
     line-height: 22px;
     text-align: left;
     color: #888B8E;
+    margin-bottom: 4px;
 }
 
 .browsing-title {

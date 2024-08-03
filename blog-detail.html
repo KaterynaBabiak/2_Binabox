@@ -93,13 +93,19 @@
         <section class="hero-pages">
             <div class="container">
                 <h1 class="hero-title">BLOG DETAIL</h1>
-                <nav>
+                <nav class="hero-navigation">
                     <ul class="hero-list">
                         <li class="hero-item">
                             <a href="./index.html" class="hero-link">HOME</a>
                         </li>
                         <li class="hero-item">
+                            <div class="vertical-line"></div>
+                        </li>
+                        <li class="hero-item">
                             <a href="./blog.html" class="hero-link">OUR BLOG</a>
+                        </li>
+                        <li class="hero-item">
+                            <div class="vertical-line"></div>
                         </li>
                         <li class="hero-item">
                             <a href="./blog-detail.html" class="hero-link actual">BLOG DETAIL</a>
@@ -111,12 +117,17 @@
         <section class="blog-detail">
             <div class="container">
                 <h2 hidden>ITEM DETAIL</h2>
-                <article class="blog-detail-card">
-                    <img src="./img/" alt="img">
-                    <h3 class="blog-detail-card-title">Enior Apple employee alleges sexism at</h3>
-                    <p class="blog-card-label">GAMING</p>
-                    <p class="blog-detail-card-author">TONY NGUYEN</p>
-                    <time datetime="2022-06-20" class="blog-detail-card-date">20 Jun 2022</time>
+                <article class="blog-detail-card main">
+                    <img src="./img/dragon-main.webp" alt="" class="blog-detail-main-img">
+                    <div class="detail-card-wrapper">
+                        <h3 class="blog-detail-card-title">Enior Apple employee alleges sexism at</h3>
+                        <p class="blog-card-label">GAMING</p>
+                    </div>
+                    <div class="blog-card-wrap">
+                        <p class="blog-detail-card-author icon-card">TONY NGUYEN</p>
+                        <p class="vertical-line"></p>
+                        <time datetime="2022-06-20" class="blog-detail-card-date icon-card">20 Jun 2022</time>
+                    </div>
                     <p class="blog-detail-card-text">
                         The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).
                         In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks.  Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.
@@ -126,13 +137,17 @@
                     <blockquote class="blog-detail-quote">
                         “The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”
                     </blockquote>
-                    <img src="./img/" alt="star">
-                    <p class="blog-detail-quote-raiting">8.5/ 10</p>
-                    <p class="blog-detail-quote-name">Markout Corporation</p>
+                    <div class="raiting icon-card">
+                        <p class="blog-detail-quote-raiting">8.5/ 10</p>
+                        <p class="blog-detail-quote-name">Markout Corporation</p>
+                    </div>
+                    
                 </div>
-                <article class="blog-detail-card">
-                    <img src="./img/" alt="img_one">
-                    <img src="./img/" alt="img_two">
+                <article class="blog-detail-card secondary">
+                    <div class="img-wrapper">
+                        <img src="./img/dragon-face.webp" alt="" class="blog-detail-img">
+                    <img src="./img/dragon.webp" alt="img_two" class="blog-detail-img">
+                    </div>
                     <h3 class="blog-detail-card-title">NFTs are digital assets that represent real-world objects</h3>
                     <p class="blog-detail-card-text">
                         Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.
@@ -169,18 +184,24 @@
                         </p>  
                         <ul class="share-list">
                             <li class="share-item">
-                                <a href="https://discord.com/" class="share-link">
-                                    <img src="./img/" alt="discord">
+                                <a href="https://discord.com" target="_blank" class="footer-socialmedia-link">
+                                    <svg class="footer-socialmedia-icon" width="20" height="20">
+                                        <use href="./img/sprite.svg#icon-discord"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="share-item">
-                                <a href="https://x.com/" class="share-link">
-                                    <img src="./img/" alt="twitter">
+                                <a href="#" target="_blank" class="footer-socialmedia-link">
+                                    <svg class="footer-socialmedia-icon" width="20" height="20">
+                                        <use href="./img/sprite.svg#icon-twitter"></use>
+                                    </svg>
                                 </a>
                             </li>
                             <li class="share-item">
-                                <a href="https://www.youtube.com/" class="share-link">
-                                    <img src="./img/" alt="youtube">
+                                <a href="https://www.youtube.com/" target="_blank" class="footer-socialmedia-link">
+                                    <svg class="footer-socialmedia-icon" width="20" height="20">
+                                        <use href="./img/sprite.svg#icon-youtube"></use>
+                                    </svg>
                                 </a>
                             </li>
                         </ul>                  
@@ -189,16 +210,20 @@
                 <div class="blog-detail-articles">
                     <article class="blog-detail-browsing">
                         <a href="#" class="browsing-link">
-                            <img src="./img/" alt="previous" class="browsing-image">
-                            <p class="browsing-label">PREVIOUS</p>
-                            <h3 class="browsing-title">Enior Apple employee alleges sexism at</h3>
+                            <img src="./img/card-small.webp" alt="previous" class="browsing-image">
+                            <div class="browsing-wrapper">
+                                <p class="browsing-label">PREVIOUS</p>
+                                <h3 class="browsing-title">Enior Apple employee alleges sexism at</h3>
+                            </div>
                         </a>
                     </article>
                     <article class="blog-detail-browsing">
                         <a href="#" class="browsing-link">
-                            <img src="./img/" alt="next" class="browsing-image">
-                            <p class="browsing-label">NEXT</p>
+                            <img src="./img/cat-small.webp" alt="next" class="browsing-image">
+                            <div class="browsing-wrapper">
+                                <p class="browsing-label">NEXT</p>
                             <h3 class="browsing-title">enior Apple employee alleges sexism at</h3>
+                            </div>
                         </a>
                     </article>
                 </div>
