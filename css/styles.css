@@ -1014,6 +1014,16 @@ dl {
     color: #FFFFFF;
 }
 
+.footer-navigation {
+    display: flex;
+    gap: 156px;
+    margin-bottom: 43px;
+}
+.footer-nav {
+    display: flex;
+    gap: 130px;
+}
+
 .footer-nav-title {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
@@ -1021,6 +1031,21 @@ dl {
     line-height: 24px;
     /*text-align: center;*/
     color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-nav-info .footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 83px;
+}
+
+.footer-company-info-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 123px;
 }
 
 .footer-subscribe .subscribe-input {
@@ -1262,17 +1287,45 @@ dl {
 /* -------------- BLOG PAGE --------------*/
 /* -------------- BLOG PAGE --------------*/
 
+.blog-catalog {
+    margin-bottom: 100px;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
 .blog-item {
     background: #141B22;
+    width: 410px;
+    padding: 30px 20px;
 }
 
 .blog-card-label {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 14px;
     line-height: 22px;
-    text-align: right;
+    text-align: center;
     color: #FFFFFF;
     background-color: #21E786B2;  
+    padding: 8px 10px;
+    width: fit-content;
+}
+
+.blog-card-img {
+    width: 410px;
+    height: 410px;
+    margin-bottom: 25px;
+}
+
+.blog-card-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
 }
 
 .blog-card-author,
@@ -1282,6 +1335,27 @@ dl {
     line-height: 24px;
     text-align: left;
     color: #888B8E;
+    display: flex;
+    gap: 6px;
+}
+
+.blog-card-author::before,
+.blog-card-date::before {
+    display: block;
+    content: "";
+
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blog-card-author.icon-card::before {
+    background-image: url(/img/author.svg);
+}
+
+.blog-card-date.icon-card::before {
+    background-image: url(/img/calendar.svg)
 }
 
 .blog-card-title {
@@ -1290,6 +1364,7 @@ dl {
     line-height: 44px;
     text-align: left;
     color: #FFFFFF;
+    margin-bottom: 4px;
 }
 
 .blog-card-text {
@@ -1297,6 +1372,7 @@ dl {
     line-height: 30px;
     text-align: left;
     color: #C2C3C5;   
+    margin-bottom: 20px;
 }
 
 .blog-card-btn {
@@ -1305,9 +1381,25 @@ dl {
     line-height: 24px;
     text-align: left;
     color: #FFFFFF;
+    display: flex;
+    gap: 4px;
 }
 
-.blog-prev-button,
+.blog-card-btn::after {
+    display: block;
+    content: "";
+
+    width: 19px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blog-card-btn.icon-card::after {
+    background-image: url(/img/read-arrow.svg);
+}
+
+/*.blog-prev-button,
 .blog-next-button {
     color: #FFFFFF;
     background-color: #0D0D11;
@@ -1320,6 +1412,13 @@ dl {
 .blog-next-button:focus {
     color: #141B22;
     background-color: #21E786;
+}*/
+
+.blog-pagination,
+.blog-pagination-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
 }
 
 .pagination-button {
@@ -1327,12 +1426,15 @@ dl {
     font-size: 18px;
     font-weight: 400;
     line-height: 28px;
-    text-align: left;
+    text-align: center;
     color: #FFFFFF;
     background-color: #0D0D11;
     border: 1px solid #141B22;
+    width: 48px;
+    height: 48px;
 }
 
+.pagination-button:hover,
 .pagination-button:active {
     color: #21E786;
     background-color: #141B22;
@@ -1463,6 +1565,11 @@ dl {
 /* -------------- CONTACT-US PAGE --------------*/
 /* -------------- CONTACT-US PAGE --------------*/
 
+.get-in-touch {
+    display: flex;
+    margin-bottom: 100px;
+}
+
 .contact-information {
     margin-bottom: 40px;
 }
@@ -1518,6 +1625,15 @@ dl {
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.contact-us-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 690px;
 }
 
 .get-in-input,
@@ -1529,6 +1645,31 @@ dl {
     border: none;
 }
 
+.contact-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.get-in-input.name {
+    width: 236px;
+    border: none;
+}
+
+.get-in-input.email {
+    width: 426px;
+}
+
+.get-in-input.phone {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.get-in-textarea {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
 .get-in-submit-button {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
@@ -1537,8 +1678,8 @@ dl {
     color: #FFFFFF;
     background-color: #0D0D11;
     border: 1px solid #21E786;
+    padding: 12px 36px;
 }
-
 
 /* -------------- ABOUT-US PAGE --------------*/
 /* -------------- ABOUT-US PAGE --------------*/
