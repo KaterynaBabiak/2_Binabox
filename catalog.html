@@ -70,7 +70,7 @@
             </ul>
         </nav>
         <div class="connect-wrapper">
-            <button class="mode-btn">
+            <button type="button" class="mode-btn">
                 <svg class="mode-icon" width="24" height="24">
                     <use href="./img/sprite.svg#icon-sun"></use>
                 </svg>
@@ -107,121 +107,350 @@
             </nav>
         </section>
         <section class="catalog">
-            <div class="catalog-header">
-                <h2 class="catalog-header-title">All Items</h2>
-                <span>
-                    <input type="text" placeholder="Search NFT" class="catalog-input">
-                    <svg class="search" width="20" height="20">
-                        <use href="./img/sprite.svg#icon-search"></use>
-                    </svg>
-                </span>
+            <div class="sidebar">
+                <form action="" class="sidebar-form">
+                    <details class="sidebar-list">
+                        <summary class="sidebar-item">clothing</summary>
+                        <div class="sidebar-item-info">
+                            <label class="sidebar-label" for="clothing1"> 
+                                Combatant
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="clothing1" 
+                                    name="clothing" 
+                                    value="combatant"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="clothing2"> 
+                                Ninja
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="clothing2" 
+                                    name="clothing" 
+                                    value="ninja"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="clothing3"> 
+                                King
+                                <input 
+                                    class="sidebar-checkbox" 
+                                    type="checkbox" 
+                                    id="clothing3" 
+                                    name="clothing" 
+                                    value="king"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="clothing4"> 
+                                Queen
+                                <input 
+                                    class="sidebar-checkbox" 
+                                    type="checkbox" 
+                                    id="clothing4" 
+                                    name="clothing" 
+                                    value="queen"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="clothing5"> 
+                                Robot
+                                <input 
+                                    class="sidebar-checkbox" 
+                                    type="checkbox" 
+                                    id="clothing5" 
+                                    name="clothing" 
+                                    value="robot"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>  
+                    </details>         
+                    <details class="sidebar-list">
+                        <summary class="sidebar-item">eyes</summary>
+                        <div class="sidebar-item-info">
+                            <label class="sidebar-label" for="eyes1">
+                                Yellow
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="eyes1" 
+                                    name="eyes" 
+                                    value="yellow"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="eyes2">
+                                Green
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="eyes2" 
+                                    name="eyes" 
+                                    value="green"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="eyes3">
+                                Mix
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="eyes3" 
+                                    name="eyes" 
+                                    value="mix"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="eyes4">
+                                Orange
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="eyes4" 
+                                    name="eyes" 
+                                    value="orange"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="eyes5">
+                                glow
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="eyes5" 
+                                    name="eyes" 
+                                    value="glow"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>  
+                            <label class="sidebar-label" for="eyes6">
+                                Blue
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="eyes6" 
+                                    name="eyes" 
+                                    value="blue"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </details>         
+                    <details class="sidebar-list">
+                        <summary class="sidebar-item">face</summary>
+                    </details>
+                    <details class="sidebar-list">
+                        <summary class="sidebar-item">skin</summary>
+                    </details>
+                    <details class="sidebar-list">
+                        <summary class="sidebar-item">background</summary>
+                    </details>
+                    <details class="sidebar-list">
+                        <summary class="sidebar-item">special</summary>
+                        <div class="sidebar-item-info">
+                            <label class="sidebar-label" for="special1"> 
+                                cat
+                                <input 
+                                    class="sidebar-checkbox"
+                                    type="checkbox" 
+                                    id="special1" 
+                                    name="special" 
+                                    value="cat"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="special2"> 
+                                sakura
+                                <input 
+                                    class="sidebar-checkbox" 
+                                    type="checkbox" 
+                                    id="special2" 
+                                    name="special" 
+                                    value="sakura"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="special3"> 
+                                snake
+                                <input 
+                                    class="sidebar-checkbox" 
+                                    type="checkbox" 
+                                    id="special3" 
+                                    name="special" 
+                                    value="snake"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="special4"> 
+                                eath
+                                <input 
+                                    class="sidebar-checkbox" 
+                                    type="checkbox" 
+                                    id="special4" 
+                                    name="special" 
+                                    value="eath"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="sidebar-label" for="special5"> 
+                                water
+                                <input 
+                                    class="sidebar-checkbox" 
+                                    type="checkbox" 
+                                    id="special5" 
+                                    name="special" 
+                                    value="water"
+                                    checked="checked"
+                                >
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </details>  
+                </form>
             </div>
-            <div class="catalog-filter">
-                <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                        <button type="button" class="catalog-filter-option">
-                            King
-                            <svg class="filter-icon" width="24" height="24">
-                                <use href="./img/sprite.svg#icon-close"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="catalog-filter-item">
-                        <button type="button" class="catalog-filter-option">
-                            Mix
-                            <svg class="filter-icon" width="24" height="24">
-                                <use href="./img/sprite.svg#icon-close"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="catalog-filter-item">
-                        <button type="button" class="catalog-filter-option">
-                            Skacura
-                            <svg class="filter-icon" width="24" height="24">
-                                <use href="./img/sprite.svg#icon-close"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="catalog-filter-item-reset">
-                        <button type="button" class="catalog-filter-reset-btn">Clear All</button>
-                    </li>
-                </ul>
-            </div>
-            <div class="catalog-range">
-                <ul class="catalog-range-list">
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/face.webp" alt="woman surreal face digital artwork" class="card-item-img">
-                                <figcaption class="card-caption">sKISIRS#2</figcaption>
-                            </figure> 
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/skeleton.webp" alt="human skeleton surrounded by a thick green fog" class="card-item-img">
-                                <figcaption class="card-caption">sKELATON #01</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/cat.webp" alt="digital cat with green eyes" class="card-item-img">
-                                <figcaption class="card-caption">MEECAT #02</figcaption>
-                            </figure> 
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/scissors.webp" alt="metal scissors on a green fabric surface" class="card-item-img">
-                                <figcaption class="card-caption">SPOTIOR #03</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/card.webp" alt="playing card with a glowing green border and intricate patterns" class="card-item-img">
-                                <figcaption class="card-caption">sKISIRS#2</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/gaming-device.webp" alt="a futuristic handheld gaming console" class="card-item-img">
-                                <figcaption class="card-caption">sKISIRS#2</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/gorilla.webp" alt="" class="card-item-img">
-                                <figcaption class="card-caption">sKISIRS#2</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/dinosaur.webp" alt="" class="card-item-img">
-                                <figcaption class="card-caption">sKISIRS#2</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <figure>
-                                <img src="./img/duck.webp" alt="" class="card-item-img">
-                                <figcaption class="card-caption">sKISIRS#2</figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
+            <div class="catalog-wrapper">
+                <div class="catalog-header">
+                    <h2 class="catalog-header-title">All Items</h2>
+                    <form action="" type="get" class="search-form">
+                        <input 
+                            class="catalog-input"
+                            type="text" 
+                            autocomplete="off"
+                            name="search"
+                            placeholder="Search NFT" >
+                            <button class="buttonn-search" type="submit">
+                                <svg class="search" width="20" height="20">
+                                    <use href="./img/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                    </form>
+                </div>
+                <div class="catalog-filter">
+                    <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                            <button type="reset" class="catalog-filter-option">
+                                King
+                                <svg class="filter-icon" width="24" height="24">
+                                    <use href="./img/sprite.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <button type="reset" class="catalog-filter-option">
+                                Mix
+                                <svg class="filter-icon" width="24" height="24">
+                                    <use href="./img/sprite.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="catalog-filter-item">
+                            <button type="reset" class="catalog-filter-option">
+                                Skacura
+                                <svg class="filter-icon" width="24" height="24">
+                                    <use href="./img/sprite.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="catalog-filter-item-reset">
+                            <button type="reset" class="catalog-filter-reset-btn">Clear All</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="catalog-range">
+                    <ul class="catalog-range-list">
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/face.webp" alt="woman surreal face digital artwork" class="card-item-img">
+                                    <figcaption class="card-caption">sKISIRS#2</figcaption>
+                                </figure> 
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/skeleton.webp" alt="human skeleton surrounded by a thick green fog" class="card-item-img">
+                                    <figcaption class="card-caption">sKELATON #01</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/cat.webp" alt="digital cat with green eyes" class="card-item-img">
+                                    <figcaption class="card-caption">MEECAT #02</figcaption>
+                                </figure> 
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/scissors.webp" alt="metal scissors on a green fabric surface" class="card-item-img">
+                                    <figcaption class="card-caption">SPOTIOR #03</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/card.webp" alt="playing card with a glowing green border and intricate patterns" class="card-item-img">
+                                    <figcaption class="card-caption">sKISIRS#2</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/gaming-device.webp" alt="a futuristic handheld gaming console" class="card-item-img">
+                                    <figcaption class="card-caption">sKISIRS#2</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/gorilla.webp" alt="" class="card-item-img">
+                                    <figcaption class="card-caption">sKISIRS#2</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/dinosaur.webp" alt="" class="card-item-img">
+                                    <figcaption class="card-caption">sKISIRS#2</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="#" class="card-link">
+                                <figure>
+                                    <img src="./img/duck.webp" alt="" class="card-item-img">
+                                    <figcaption class="card-caption">sKISIRS#2</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -311,8 +540,18 @@
                 </div>
                 <div class="footer-subscribe">
                     <h3 class="footer-nav-title">SUBSCRIBE</h3>
-                    <input type="text" class="subscribe-input" placeholder="Enter your email">
-                    <button type="button" class="join-us-subscribe-btn">SUBSCRIBE</button>
+                    <form class="footer-subscribe-pages" action="" method="get">
+                        <input type="text" class="subscribe-input" 
+                        type="email"
+                        name="email" 
+                        autocomplete="on"
+                        placeholder="Enter your email"
+                        required
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                        inputmode="email"
+                    >
+                    <button class="join-us-subscribe-btn" type="submit" >SUBSCRIBE</button>
+                    </form>
                 </div>
             </nav>
         </div>     

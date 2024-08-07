@@ -70,7 +70,7 @@
             </ul>
         </nav>
         <div class="connect-wrapper">
-            <button class="mode-btn">
+            <button type="button" class="mode-btn">
                 <svg class="mode-icon" width="24" height="24">
                     <use href="./img/sprite.svg#icon-sun"></use>
                 </svg>
@@ -234,33 +234,37 @@
                 <h2 class="blog-detail-reply-title">LEAVE A REPLY</h2>
                 <p class="blog-detail-reply-text">Your email address will not be published. Required fields are marked</p>
                 <form method="get">
-                    <input class="get-in-input"
+                    <div class="input-wrapper">
+                        <input class="get-in-input reply-name"
                         type="text" 
                         name="name" 
                         autocomplete="name" 
                         placeholder="Name*"
                         required
                     />
-                    <input class="get-in-input"
+                    <input class="get-in-input reply-email"
                         type="email" 
                         name="email" 
                         autocomplete="email"
                         placeholder="Enter your email*"
                         required
                     />
-                    <input class="get-in-input"
+                    </div>
+                    <div class="input-wrapper">
+                        <input class="get-in-input reply-phone"
                         type="tel" 
                         name="phone" 
                         autocomplete="on" 
                         placeholder="Phone Number*"
                         required
                     />
-                    <input class="get-in-input"
-                    type="text" 
+                    <input class="get-in-input reply-website"
+                    type="url" 
                     name="website"  
                     placeholder="Website"
                     required
                     />
+                    </div>
                     <textarea class="get-in-textarea"
                         id="get-in-touch-comment"
                         name="comment" 
@@ -358,8 +362,18 @@
                 </div>
                 <div class="footer-subscribe">
                     <h3 class="footer-nav-title">SUBSCRIBE</h3>
-                    <input type="text" class="subscribe-input" placeholder="Enter your email">
-                    <button type="button" class="join-us-subscribe-btn">SUBSCRIBE</button>
+                    <form class="footer-subscribe-pages" action="" method="get">
+                        <input type="text" class="subscribe-input" 
+                        type="email"
+                        name="email" 
+                        autocomplete="on"
+                        placeholder="Enter your email"
+                        required
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                        inputmode="email"
+                    >
+                    <button class="join-us-subscribe-btn" type="submit" >SUBSCRIBE</button>
+                    </form>
                 </div>
             </nav>
         </div>     

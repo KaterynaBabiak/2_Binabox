@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 18px;
@@ -5,6 +9,7 @@ body {
     line-height: 28px;
     color: #C2C3C5;
     background-color: #0D0D11;
+    box-sizing: border-box;
 }
 
 h1,
@@ -117,19 +122,23 @@ dl {
 .mode-btn {
     background-color: transparent;
     border: none;
+
 }
 
 .mode-icon {
-    fill: #21E786;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
     background-color: #141B22;
     border: none;
     border-radius: 50%;
-    padding: 12px;
+    fill: #21E786;
+    
 }
 
 .mode-icon:hover {
-    fill: #1B2226;
     background-color: #21E786; 
+    fill: #1B2226;  
 }
 
 .header-discord-link {
@@ -139,9 +148,7 @@ dl {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #141B22;
-    border: 2px solid #141B22;;
-    width: 95px;
-    height: 20px;
+    border: 2px solid #141B22;
     padding: 12px 24px;
     gap: 8px;
     display: flex;  
@@ -161,8 +168,6 @@ dl {
     color: #141B22;
     background-color: #21E786;
     border: none;
-    width: 149px;
-    height: 48px;
     padding: 12px 24px;
     gap: 8px;
     display: flex;
@@ -267,8 +272,7 @@ dl {
 
 .card-item {
     background: #FFFFFF0D;
-    width: 290px;
-    height: 338px;
+    width: 330px;
     padding: 20px;
 }
 
@@ -290,8 +294,8 @@ dl {
 /* -------------- ABOUT-US SECTION --------------*/
 
 .about-us {
-    /*display: flex;
-    justify-content: center;*/
+    display: flex;
+    justify-content: center;
     margin-bottom: 100px;
 }
 
@@ -311,6 +315,8 @@ dl {
 
 .hero-pages {
     background-color: #141B22;
+    padding-top: 77px;
+    padding-bottom: 77px;
 }
 
 .about-us-text {
@@ -325,14 +331,12 @@ dl {
     justify-content: center;
     gap: 30px;
     margin-bottom: 30px;
-
 }
 
 .about-us-item {
     position: relative;
     background-color: #141B22;
-    width: 510px;
-    height: 164px;
+    width: 570px;
     padding: 82px 30px 30px 30px;
 }
 
@@ -408,8 +412,7 @@ dl {
 .binabox-card-item {
     text-align: center;
     background-color: #141B22;
-    width: 276px;
-    height: 160px;
+    width: 330px;
     padding: 30px 26px 26px 26px;
 }
 
@@ -574,8 +577,8 @@ dl {
 .team-item {
     text-align: center;
     background-color: #141B22;
-    width: 290px;
-    height: 260px;
+    width: 330px;
+    height: 339px;
     padding: 40px 20px;
 }
 
@@ -622,8 +625,8 @@ dl {
 }
 
 .partner-item {
-    width: 182px;
-    height: 60px;
+    width: 210px;
+    height: 100px;
     padding: 20px 14px;
 }
 
@@ -678,12 +681,14 @@ dl {
     content: '';
     width: 32px;
     height: 32px;
+    opacity: 40%;
     background: url(../img/plus.svg);
     background-size: cover;
+    width: 32px;
 }
 
 .faqs-list[open] .faqs-item::after  {
-    
+    opacity: 100%;
     background: url(../img/minus.svg);
 }
 
@@ -714,6 +719,8 @@ dl {
 
 .join-us{
     background: linear-gradient(268.28deg, #2333DE -1.34%, #0ABE66 100%);
+    padding-top: 40px;
+    padding-bottom: 48px;
 }
 
 .join-us-btn-list {
@@ -734,7 +741,6 @@ dl {
 .join-us-discord-link {
     color: #FFFFFF;
     background-color: #5865F2;
-    width: 99px;
     display: flex;
     gap: 8px;
     padding: 12px 24px;
@@ -764,16 +770,21 @@ dl {
     font-size: 16px;
     line-height: 26px;
     text-align: left;
+    color: #C2C3C5;
     background-color: #C2C3C526;
     border: none;
     width: 536px;
+    padding: 14px 24px;
+}
+
+.subscribe-input:focus {
+    outline: none;
+    color: #C2C3C5;
+    background-color: #C2C3C526;
 }
 
 .subscribe-input::placeholder {
     color: #C2C3C5;
-    padding-left: 24px;
-    padding-top: 15px;
-    padding-bottom: 15px;
 }
 
 .join-socialmedia-list {
@@ -785,8 +796,8 @@ dl {
 
 .join-socialmedia-item {
     background-color: #C2C3C526;
-    width: 27px;
-    height: 27px;
+    width: 50px;
+    height: 50px;
     padding: 11px;
 }
 
@@ -903,21 +914,168 @@ dl {
     height: 16px;
 }
 
-.catalog-input {
-    line-height: 26px;
-    text-align: left;
-    background-color: #141B22;
-    border: none;   
+.search-form {
+    position: relative;
 }
 
-.catalog-input ::placeholder {
+.catalog-input {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: #141B22;
+    width: 280px;
+    padding: 13px 20px 9px 24px;
+    border: none;  
+    outline: none;
+}
+
+.catalog-input::placeholder {
     color: #888B8E;
+}
+
+.buttonn-search {
+    position: absolute;
+    display: block;
+    top: 13px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
 }
 
 /* -------------- catalog filter --------------*/
 
+.catalog {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+
+/* -------------- sidebar --------------*/
+
+.sidebar {
+    width: 280px;
+}
+
+.sidebar-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.sidebar-list {
+    background: #141B22;
+    width: 100%;
+}
+
+.sidebar-item {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FFFFFF;
+    background: #141B22;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 12px;
+}
+
+.sidebar-item::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(../img/plus.svg);
+    background-size: cover;    
+}
+
+.sidebar-list[open] .sidebar-item::after  {
+    background: url(../img/minus.svg);
+}
+
+.sidebar-list[open] .sidebar-item-info {
+
+    border-top: 1px solid #434343;
+    text-transform: capitalize;
+    padding: 20px 23px;    
+}
+
+.sidebar-label {
+    font-size: 14px;
+    line-height: 22px;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .sidebar-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid #C2C3C5;
+    border-radius: 2px;
+  }
+  
+  /* When the checkbox is checked, add a green background */
+  .sidebar-checkbox:checked ~ .checkmark {
+    background-color: #21E786;
+    border: none;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+ .sidebar-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+ .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+.catalog-wrapper {
+    width: 1050px;
+}
+
 .catalog-header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
 }
@@ -966,14 +1124,16 @@ dl {
 
 /* -------------- catalog range --------------*/
 
+.catalog-range-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .catalog-range-item {
     background-color: #FFFFFF0D;
 }
 
-/*.catalog-range-img {
-       
-}
-*/
 .catalog-range-title {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
@@ -1048,8 +1208,13 @@ dl {
     width: 123px;
 }
 
+.footer-subscribe-pages {
+    display: flex;
+    justify-content: center;
+}
+
 .footer-subscribe .subscribe-input {
-    width: 287px;
+    width: 239px;
 }
 
 .footer-socialmedia-list {
@@ -1300,7 +1465,7 @@ dl {
 
 .blog-item {
     background: #141B22;
-    width: 410px;
+    width: 450px;
     padding: 30px 20px;
 }
 
@@ -1526,7 +1691,7 @@ dl {
     border-left: 8px solid #21E786;
     text-transform: capitalize;
     padding: 26px 37px 26px 32px;
-    width: 943px;
+    width: 1020px;
     margin-bottom: 40px;
 }
 
@@ -1636,7 +1801,7 @@ dl {
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #41454A66;
-    /*padding: 8px 12px;*/  
+    padding: 8px 12px; 
 }
 
 .blog-detail-articles {
@@ -1646,7 +1811,7 @@ dl {
 
 .blog-detail-browsing {
     background-color: #141B22;
-    width: 371px;
+    width: 411px;
     padding: 20px;
 }
 
@@ -1673,6 +1838,10 @@ dl {
 
 }
 
+.blog-detail-reply {
+    width: 1020px;
+}
+
 .blog-detail-reply-title {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
@@ -1681,6 +1850,7 @@ dl {
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 4px;
 }
 
 .blog-detail-reply-text {
@@ -1688,7 +1858,24 @@ dl {
     line-height: 30px;
     text-align: left;
     color: #C2C3C5;
+    margin-bottom: 30px;
 
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper .reply-name,
+.input-wrapper .reply-phone {
+    width: 335px;
+}
+
+.input-wrapper .reply-email,
+.input-wrapper .reply-website {
+    width: 100%;
 }
 
 /* -------------- CONTACT-US PAGE --------------*/
@@ -1710,6 +1897,7 @@ dl {
 
 .contact-list {
     display: flex;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -1771,13 +1959,34 @@ dl {
     font-size: 16px;
     line-height: 26px;
     text-align: left;
+    color: #C2C3C5;
     background-color: #C2C3C526;
     border: none;
+    padding: 14px 24px;
+}
+
+.get-in-input::placeholder,
+.get-in-textarea::placeholder {
+    font-size: 16px;
+    line-height: 26px;
+    border: none;
+}
+
+.get-in-input:focus,
+.get-in-textarea:focus {
+    outline: none;
+    color: #C2C3C5;
+}
+
+.get-in-textarea {
+    height: 150px;
+    resize: none;
 }
 
 .contact-info {
     display: flex;
     gap: 20px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -1844,11 +2053,8 @@ dl {
 }
 
 .about-list .about-us-item {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     width: 330px;
-    height: 164px;
+    
 }
 
 .about-list .about-us-number {
