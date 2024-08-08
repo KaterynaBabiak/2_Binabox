@@ -54,6 +54,13 @@ dl {
     margin-inline-end: 0;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #C2C3C5;
+  -webkit-box-shadow: 0 0 0 100px #262729 inset;
+}
+
 /*img {
     display: block;
     max-width: 100%;
@@ -471,6 +478,16 @@ dl {
 .map-info {
     background-color: #FFFFFF0D;
     margin-bottom: 24px;
+}
+
+.map-img.big {
+    width: 470px;
+    height: 470px;
+}
+
+.map-img.small {
+    width: 225px;
+    height: 225px;
 }
 
 .map-describe-title {
@@ -931,7 +948,20 @@ dl {
 }
 
 .catalog-input::placeholder {
+    font-size: 16px;
+    line-height: 26px;
     color: #888B8E;
+}
+
+.catalog-input:focus {
+    outline: none;
+    color: #C2C3C5;
+}
+
+.subscribe-input:focus {
+    outline: none;
+    color: #C2C3C5;
+    background-color: #C2C3C526;
 }
 
 .buttonn-search {
@@ -1016,7 +1046,7 @@ dl {
   }
   
   /* Hide the browser's default checkbox */
-  .sidebar-checkbox {
+  .sidebar-label .sidebar-checkbox {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -1050,12 +1080,12 @@ dl {
   }
   
   /* Show the checkmark when checked */
- .sidebar-checkbox:checked ~ .checkmark:after {
+*.sidebar-label .sidebar-checkbox:checked ~ .checkmark:after {
     display: block;
   }
   
   /* Style the checkmark/indicator */
- .checkmark:after {
+  .sidebar-label .checkmark:after {
     left: 5px;
     top: 1px;
     width: 4px;
@@ -1066,8 +1096,6 @@ dl {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
-
 
 .catalog-wrapper {
     width: 1050px;
@@ -1623,7 +1651,7 @@ dl {
 }
 
 .blog-detail-main-img {
-    width: 100%;
+    width: 1020px;
     height: 557px;
     margin-bottom: 30px;
 }
@@ -1820,6 +1848,11 @@ dl {
     gap: 16px;
 }
 
+.browsing-img {
+    width: 80px;
+    height: 80px;
+}
+
 .browsing-label {
     font-size: 14px;
     font-weight: 700;
@@ -1996,7 +2029,7 @@ dl {
 }
 
 .get-in-input.email {
-    width: 426px;
+    width: 100%;
 }
 
 .get-in-input.phone {
