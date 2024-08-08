@@ -1249,7 +1249,7 @@ input:-webkit-autofill:focus {
     border: 1px solid green;
 }
 
-.subscribe-input:invalid:not(:placeholder-shown, focus) {
+.subscribe-input:invalid:not(:placeholder-shown) {
     border: 1px solid red;
 }
 
@@ -2017,7 +2017,7 @@ input:-webkit-autofill:focus {
     border: 1px solid green;
 }
 
-.get-in-input:invalid:not(:placeholder-shown, focus) {
+.get-in-input:invalid:not(:placeholder-shown) {
     border: 1px solid red;
 }
 
