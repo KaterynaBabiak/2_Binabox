@@ -428,19 +428,19 @@ dl {
 }
 
 .binabox-card-item.icon-card::before {
-    background-image: url(../img/card.svg);
+    background-image: url(../img/icons/card.svg);
 }
 
 .binabox-card-item.icon-check::before {
-    background-image: url(../img/check.svg);
+    background-image: url(../img/icons/check.svg);
 }
 
 .binabox-card-item.icon-money::before {
-    background-image: url(../img/money.svg);
+    background-image: url(../img/icons/money.svg);
 }
 
 .binabox-card-item.icon-shop::before {
-    background-image: url(../img/shop.svg);
+    background-image: url(../img/icons/shop.svg);
 }
 
 .binabox-card-title {
@@ -533,14 +533,14 @@ dl {
     font-size: 20px;
     text-transform: uppercase;
     color: #888B8E;
-    background-image: url(../img/Elipse.svg);
+    background-image: url(../img/icons/elipse.svg);
     background-repeat: no-repeat;
 }
 
 .map-pagination-item:hover,
 .map-pagination-item:focus {
     color: #FFFFFF;
-    background-image: url(../img/elipse-hower.svg);
+    background-image: url(../img/icons/elipse-hower.svg);
 }
 
 .map-pagination-title {
@@ -682,14 +682,14 @@ dl {
     width: 32px;
     height: 32px;
     opacity: 40%;
-    background: url(../img/plus.svg);
+    background: url(../img/icons/plus+.svg);
     background-size: cover;
     width: 32px;
 }
 
 .faqs-list[open] .faqs-item::after  {
     opacity: 100%;
-    background: url(../img/minus.svg);
+    background: url(../img/icons/minus-.svg);
 }
 
 .faqs-list[open] .faqs-item {
@@ -986,12 +986,12 @@ dl {
     content: '';
     width: 24px;
     height: 24px;
-    background: url(../img/plus.svg);
+    background: url(../img/icons/plus+.svg);
     background-size: cover;    
 }
 
 .sidebar-list[open] .sidebar-item::after  {
-    background: url(../img/minus.svg);
+    background: url(../img/icons/minus-.svg);
 }
 
 .sidebar-list[open] .sidebar-item-info {
@@ -1517,11 +1517,11 @@ dl {
 }
 
 .blog-card-author.icon-card::before {
-    background-image: url(/img/author.svg);
+    background-image: url(/img/icons/author.svg);
 }
 
 .blog-card-date.icon-card::before {
-    background-image: url(/img/calendar.svg)
+    background-image: url(/img/icons/calendar.svg)
 }
 
 .blog-card-title {
@@ -1720,7 +1720,7 @@ dl {
 }
 
 .raiting.icon-card::before {
-    background-image: url(/img/star.svg)
+    background-image: url(/img/icons/star.svg)
 }
 
 .blog-detail-quote-raiting {
