@@ -1245,6 +1245,14 @@ input:-webkit-autofill:focus {
     width: 239px;
 }
 
+.subscribe-input:valid:not(:placeholder-shown) {
+    border: 1px solid green;
+}
+
+.subscribe-input:invalid:not(:placeholder-shown, focus) {
+    border: 1px solid red;
+}
+
 .footer-socialmedia-list {
     display: flex;
     gap: 40px;
@@ -1272,7 +1280,7 @@ input:-webkit-autofill:focus {
 
 .card-counter {
     background-color: #FFFFFF4D;
-    width: 460px;
+    width: 608px;
     /*display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1357,8 +1365,8 @@ input:-webkit-autofill:focus {
 
 .card-wrapper {
     background-color: #141B22;
-    width: 156px;
-    height: 60px;
+    width: 196px;
+    height: 100px;
     padding: 20px;
 }
 
@@ -2003,6 +2011,14 @@ input:-webkit-autofill:focus {
     font-size: 16px;
     line-height: 26px;
     border: none;
+}
+
+.get-in-input:valid:not(:placeholder-shown) {
+    border: 1px solid green;
+}
+
+.get-in-input:invalid:not(:placeholder-shown, focus) {
+    border: 1px solid red;
 }
 
 .get-in-input:focus,
