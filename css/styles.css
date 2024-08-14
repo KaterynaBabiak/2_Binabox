@@ -67,6 +67,16 @@ img {
     height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
 .container {
     width: max-1440px;
     margin-left: auto;
@@ -84,7 +94,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 32px;
     line-height: 1.31;
-    color: #FFFFFF;
+    color: #FFF;
     text-align: left;
     display: flex;
     align-items: center;
@@ -117,7 +127,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .connect-wrapper {
@@ -153,7 +163,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #141B22;
     border: 2px solid #141B22;
     padding: 12px 24px;
@@ -193,7 +203,7 @@ img {
 .hero-main-title {
     font-size: 72px;
     line-height: 1.11;
-    color: #FFFFFF;
+    color: #FFF;
     /*padding-top: 249px;*/
     margin-bottom: 20px;
 }
@@ -207,7 +217,7 @@ img {
     font-size: 20px;
     line-height: 1.5;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 24px;
 }
 
@@ -221,7 +231,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
     line-height: 1.27;
-    color: #FFFFFF;
+    color: #FFF;
     text-shadow: 0px 4px 13px #FFFFFF66;
     margin-bottom: 8px;
     
@@ -255,7 +265,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #0D0D11;
     border: 2px solid #21E786;
     padding: 12px 24px;
@@ -295,7 +305,7 @@ img {
     line-height: 1.4;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 /* -------------- ABOUT-US SECTION --------------*/
@@ -312,7 +322,7 @@ img {
     font-weight: 400;
     line-height: 1.27;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 60px;
 }
 
@@ -368,7 +378,7 @@ img {
     line-height: 1.25;
     text-align: left;
     text-transform: uppercase;
-    color: #FFFFFF;    
+    color: #FFF;    
     margin-bottom: 26px;
 }
 
@@ -382,7 +392,7 @@ img {
     font-size: 56px;
     line-height: 1.21;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     /*text-shadow: 0px 4px 16px 0px #FFFFFF66;*/
 }
 
@@ -391,7 +401,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #0D0D11;
     border: 2px solid #21E786;
     padding: 12px 24px;
@@ -466,7 +476,7 @@ img {
     line-height: 1.33;
     text-align: center;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 /* -------------- MAP SECTION --------------*/
@@ -497,7 +507,7 @@ img {
     line-height: 1.22;
     text-align: left;
     text-transform: uppercase;
-    color: #FFFFFF;  
+    color: #FFF;  
     margin-bottom: 16px;  
 }
 
@@ -556,7 +566,7 @@ img {
 
 .map-pagination-item:hover,
 .map-pagination-item:focus {
-    color: #FFFFFF;
+    color: #FFF;
     background-image: url(../img/icons/elipse-hower.svg);
 }
 
@@ -611,7 +621,7 @@ img {
     font-weight: 400;
     line-height: 1.25;
     text-transform: capitalize;
-    color: #FFFFFF;    
+    color: #FFF;    
 }
 
 .team-text {
@@ -710,7 +720,7 @@ img {
 }
 
 .faqs-list[open] .faqs-item {
-    color: #FFFFFF;
+    color: #FFF;
     /*border-bottom: 1px solid #434343;  */
 }
 
@@ -756,7 +766,7 @@ img {
 }
 
 .join-us-discord-link {
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #5865F2;
     display: flex;
     gap: 8px;
@@ -838,7 +848,7 @@ img {
     font-size: 22px;
     line-height: 1.36;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     display: flex;
     gap: 16px;
 }
@@ -884,7 +894,7 @@ img {
     font-weight: 400;
     line-height: 1.27;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .hero-navigation {
@@ -915,7 +925,7 @@ img {
     font-weight: 400;
     line-height: 1.27;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .hero-list {
@@ -1003,7 +1013,7 @@ img {
     line-height: 1.4;
     text-transform: uppercase;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     background: #141B22;
     list-style: none;
     display: flex;
@@ -1167,7 +1177,7 @@ img {
     line-height: 1.4;
     /*text-align: center;*/
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 /* -------------- FOOTER SECTION --------------*/
@@ -1189,7 +1199,7 @@ img {
     line-height: 1.4;
     text-align: left;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 12px;
     display: flex;
     gap: 16px;
@@ -1198,7 +1208,7 @@ img {
 .footer-catalog-logo-text {
     font-size: 16px;
     line-height: 1.63;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .footer-navigation {
@@ -1217,7 +1227,7 @@ img {
     font-weight: 400;
     line-height: 1.5;
     /*text-align: center;*/
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 20px;
 }
 
@@ -1305,7 +1315,7 @@ img {
     font-weight: 400;
     line-height: 1.25;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 12px;
 }
 
@@ -1315,7 +1325,7 @@ img {
     line-height: 1.27;
     /*text-align: left;*/
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .card-counter-meaning {
@@ -1348,7 +1358,7 @@ img {
     line-height: 1.27;
     text-align: left;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 24px;
 }
 
@@ -1381,7 +1391,7 @@ img {
     font-size: 24px;
     line-height: 1.25;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     margin-inline-start: 0;
 }
 
@@ -1389,7 +1399,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
     line-height: 1.22;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 40px;
 }
 
@@ -1422,7 +1432,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     border: 2px solid #888B8E;
     padding: 16px 76px;
     display: flex;
@@ -1436,7 +1446,7 @@ img {
     font-weight: 400;
     line-height: 1.27;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 40px;
 }
 
@@ -1459,7 +1469,7 @@ img {
 .scrollbar-btn {
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: transparent;
     border: 1px solid #21E786;
     width: 48px;
@@ -1474,8 +1484,8 @@ img {
 }
 
 .scrollbar-icon {
-    fill: #FFFFFF;
-    stroke: #FFFFFF;
+    fill: #FFF;
+    stroke: #FFF;
 }
 
 .scrollbar-icon:hover {
@@ -1509,7 +1519,7 @@ img {
     font-size: 14px;
     line-height: 1.57;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #21E786B2;  
     padding: 8px 10px;
     width: fit-content;
@@ -1564,7 +1574,7 @@ img {
     font-size: 36px;
     line-height: 1.22;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 4px;
 }
 
@@ -1581,7 +1591,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     display: flex;
     gap: 4px;
 }
@@ -1602,7 +1612,7 @@ img {
 
 /*.blog-prev-button,
 .blog-next-button {
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #0D0D11;
     border: 1px solid #21E786;
 }
@@ -1628,7 +1638,7 @@ img {
     font-weight: 400;
     line-height: 1.56;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #0D0D11;
     border: 1px solid #141B22;
     width: 48px;
@@ -1676,7 +1686,7 @@ img {
     line-height: 1.22;
     text-transform: capitalize;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 40px;
 }
 
@@ -1741,7 +1751,7 @@ img {
     font-weight: 600;
     line-height: 1.25;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     margin-inline-start: 0px;
 }
 
@@ -1777,7 +1787,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .blog-detail-card.secondary {
@@ -1809,7 +1819,7 @@ img {
     line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .blog-detail-tags {
@@ -1840,7 +1850,7 @@ img {
     line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #41454A66;
     padding: 8px 12px; 
 }
@@ -1880,7 +1890,7 @@ img {
     font-weight: 700;
     text-align: left;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #FFF;
 
 }
 
@@ -1914,7 +1924,7 @@ img {
     line-height: 1.25;
     text-align: left;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     padding: 16px 24px;
     border-bottom: 1px solid #434343;
 }
@@ -1963,7 +1973,7 @@ img {
     line-height: 1.56;
     text-align: left;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .posts-card-info {
@@ -2006,7 +2016,7 @@ img {
     font-size: 12px;
     line-height: 1.5;
     text-align: left;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #41454A66;
     padding: 8px 12px;
 }
@@ -2025,7 +2035,7 @@ img {
     line-height: 1.22;
     text-align: left;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 4px;
 }
 
@@ -2093,7 +2103,7 @@ img {
     font-weight: 400;
     line-height: 1.22;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .contact-text {
@@ -2111,14 +2121,14 @@ img {
     font-weight: 400;
     line-height: 1.27;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .get-in-text {
     font-size: 20px;
     line-height: 1.5;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 60px;
 }
 
@@ -2198,7 +2208,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #0D0D11;
     border: 1px solid #21E786;
     padding: 12px 36px;
@@ -2227,7 +2237,7 @@ img {
     font-size: 56px;
     line-height: 1.21;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFF;
     text-shadow: 0px 4px 13px #FFFFFF66;
 }
 
