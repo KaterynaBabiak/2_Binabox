@@ -6,7 +6,7 @@ body {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.56;
     color: #C2C3C5;
     background-color: #0D0D11;
     box-sizing: border-box;
@@ -83,7 +83,7 @@ img {
 .header .logo-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 32px;
-    line-height: 42px;
+    line-height: 1.31;
     color: #FFFFFF;
     text-align: left;
     display: flex;
@@ -114,7 +114,7 @@ img {
     gap: 8px;
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -151,7 +151,7 @@ img {
 .header-discord-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #141B22;
@@ -170,7 +170,7 @@ img {
 .header-connect-btn {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-transform: uppercase;
     color: #141B22;
     background-color: #21E786;
@@ -192,7 +192,7 @@ img {
 
 .hero-main-title {
     font-size: 72px;
-    line-height: 80px;
+    line-height: 1.11;
     color: #FFFFFF;
     /*padding-top: 249px;*/
     margin-bottom: 20px;
@@ -205,7 +205,7 @@ img {
 
 .hero-main-text {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: left;
     color: #FFFFFF;
     margin-bottom: 24px;
@@ -220,7 +220,7 @@ img {
 .hero-num-item {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
-    line-height: 56px;
+    line-height: 1.27;
     color: #FFFFFF;
     text-shadow: 0px 4px 13px #FFFFFF66;
     margin-bottom: 8px;
@@ -230,7 +230,7 @@ img {
 
 .hero-subhead-item {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.62;
     text-align: left;
 }
 
@@ -292,7 +292,7 @@ img {
 .card-caption {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -310,7 +310,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
     font-weight: 400;
-    line-height: 56px;
+    line-height: 1.27;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 60px;
@@ -354,7 +354,7 @@ img {
     /*z-index: -1;*/
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 80px;
-    line-height: 96px;
+    line-height: 1.2;
     text-align: left;
     color: transparent;
     -webkit-text-stroke-width: 1px;
@@ -365,7 +365,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.25;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;    
@@ -380,7 +380,7 @@ img {
 .about-us-info-description {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 56px;
-    line-height: 68px;
+    line-height: 1.21;
     text-align: left;
     color: #FFFFFF;
     /*text-shadow: 0px 4px 16px 0px #FFFFFF66;*/
@@ -454,7 +454,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 22px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.36;
     text-align: center;
     text-transform: uppercase;
     color: #21E786;
@@ -463,7 +463,7 @@ img {
 .binabox-card-text {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 1.33;
     text-align: center;
     text-transform: capitalize;
     color: #FFFFFF;
@@ -494,7 +494,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
-    line-height: 44px;
+    line-height: 1.22;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;  
@@ -609,7 +609,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.25;
     text-transform: capitalize;
     color: #FFFFFF;    
 }
@@ -685,7 +685,7 @@ img {
 .faqs-item {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.25;
     text-align: left;
     background: #141B22;
     list-style: none;
@@ -750,7 +750,7 @@ img {
 .join-us-btn-item {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: center;
     text-transform: uppercase;    
 }
@@ -768,7 +768,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
     color: #141B22;
@@ -785,7 +785,7 @@ img {
 
 .subscribe-input {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     text-align: left;
     color: #C2C3C5;
     background-color: #C2C3C526;
@@ -836,7 +836,7 @@ img {
 .footer-copyright-part .logo-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 22px;
-    line-height: 30px;
+    line-height: 1.36;
     text-align: left;
     color: #FFFFFF;
     display: flex;
@@ -850,7 +850,7 @@ img {
 
 .footer-copyright {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.57;
 }
 
 .footer-nav-list {
@@ -860,7 +860,7 @@ img {
 
 .footer-nav-link {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.57;
     /*text-align: right;*/
     text-transform:capitalize;
     color: #C2C3C5;
@@ -882,7 +882,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
     font-weight: 400;
-    line-height: 56px;
+    line-height: 1.27;
     text-align: center;
     color: #FFFFFF;
 }
@@ -895,7 +895,7 @@ img {
 .hero-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.43;
     /*text-align: center;*/
     text-transform: uppercase;
     color: #888B8E;
@@ -913,7 +913,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
     font-weight: 400;
-    line-height: 56px;
+    line-height: 1.27;
     text-align: left;
     color: #FFFFFF;
 }
@@ -938,7 +938,7 @@ img {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.63;
     background-color: #141B22;
     width: 280px;
     padding: 13px 20px 9px 24px;
@@ -948,7 +948,7 @@ img {
 
 .catalog-input::placeholder {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     color: #888B8E;
 }
 
@@ -1000,7 +1000,7 @@ img {
 .sidebar-item {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     text-transform: uppercase;
     text-align: left;
     color: #FFFFFF;
@@ -1032,7 +1032,7 @@ img {
 
 .sidebar-label {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.57;
     display: block;
     position: relative;
     padding-left: 26px;
@@ -1123,7 +1123,7 @@ img {
     font-family: Poppins, Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 1.63;
     text-align: left;
     color: #F7F7F7;
     background-color: #141B22;
@@ -1142,7 +1142,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 1.57;
     text-align: left;
     color: #21E786;
     background-color: #141B22;
@@ -1164,7 +1164,7 @@ img {
 .catalog-range-title {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     /*text-align: center;*/
     text-transform: uppercase;
     color: #FFFFFF;
@@ -1186,7 +1186,7 @@ img {
 .footer-logo .logo-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 30px;
-    line-height: 42px;
+    line-height: 1.4;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -1197,7 +1197,7 @@ img {
 
 .footer-catalog-logo-text {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     color: #FFFFFF;
 }
 
@@ -1215,7 +1215,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     /*text-align: center;*/
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -1303,7 +1303,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.25;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 12px;
@@ -1312,7 +1312,7 @@ img {
 .card-counter-quantity {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
-    line-height: 56px;
+    line-height: 1.27;
     /*text-align: left;*/
     text-transform: uppercase;
     color: #FFFFFF;
@@ -1321,7 +1321,7 @@ img {
 .card-counter-meaning {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 1.4;
     /*text-align: left;*/
     text-transform: uppercase;
     color: #F6F6F6;
@@ -1331,7 +1331,7 @@ img {
 .counter-separator {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
-    line-height: 44px;
+    line-height: 1.22;
 }
 
 .card-filter {
@@ -1345,7 +1345,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
     font-weight: 400;
-    line-height: 56px;
+    line-height: 1.27;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -1354,7 +1354,7 @@ img {
 
 .card-text {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     margin-bottom: 20px;
 }
 
@@ -1371,7 +1371,7 @@ img {
 
 .card-option {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     text-align: left;
     color: #C2C3C5;
 }
@@ -1379,7 +1379,7 @@ img {
 .card-meaning {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 1.25;
     text-align: left;
     color: #FFFFFF;
     margin-inline-start: 0;
@@ -1388,7 +1388,7 @@ img {
 .card-price { 
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
-    line-height: 44px;
+    line-height: 1.22;
     color: #FFFFFF;
     margin-bottom: 40px;
 }
@@ -1397,7 +1397,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
     color: #141B22;
@@ -1420,7 +1420,7 @@ img {
 .card-socialmedia-link {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-transform: uppercase;
     color: #FFFFFF;
     border: 2px solid #888B8E;
@@ -1434,7 +1434,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
     font-weight: 400;
-    line-height: 56px;
+    line-height: 1.27;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 40px;
@@ -1507,7 +1507,7 @@ img {
 .blog-card-label {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.57;
     text-align: center;
     color: #FFFFFF;
     background-color: #21E786B2;  
@@ -1533,7 +1533,7 @@ img {
 .blog-card-date {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: left;
     color: #888B8E;
     display: flex;
@@ -1562,7 +1562,7 @@ img {
 .blog-card-title {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
-    line-height: 44px;
+    line-height: 1.22;
     text-align: left;
     color: #FFFFFF;
     margin-bottom: 4px;
@@ -1570,7 +1570,7 @@ img {
 
 .blog-card-text {
     font-size: 20px; 
-    line-height: 30px;
+    line-height: 1.5;
     text-align: left;
     color: #C2C3C5;   
     margin-bottom: 20px;
@@ -1579,7 +1579,7 @@ img {
 .blog-card-btn {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: left;
     color: #FFFFFF;
     display: flex;
@@ -1626,7 +1626,7 @@ img {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.56;
     text-align: center;
     color: #FFFFFF;
     background-color: #0D0D11;
@@ -1673,7 +1673,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
-    line-height: 44px;
+    line-height: 1.22;
     text-transform: capitalize;
     text-align: left;
     color: #FFFFFF;
@@ -1714,7 +1714,7 @@ img {
     font-family: Poppins;
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: left;
     color: #888B8E;
     display: flex;
@@ -1723,7 +1723,7 @@ img {
 
 .blog-detail-card-text {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: left;
 }
 
@@ -1739,7 +1739,7 @@ img {
 .blog-detail-quote {
     font-size: 24px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.25;
     text-align: left;
     color: #FFFFFF;
     margin-inline-start: 0px;
@@ -1766,7 +1766,7 @@ img {
 
 .blog-detail-quote-raiting {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.57;
     text-align: left;
     color: #BBBABE;
     margin-right: 8px;
@@ -1775,7 +1775,7 @@ img {
 .blog-detail-quote-name {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: left;
     color: #FFFFFF;
 }
@@ -1806,7 +1806,7 @@ img {
 .blog-detail-subtitle {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -1832,12 +1832,12 @@ img {
 }
 
 .caption-item {
-    line-height: 18px;
+    line-height: 1;
 }
 
 .caption-link {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -1869,7 +1869,7 @@ img {
 .browsing-label {
     font-size: 14px;
     font-weight: 700;
-    line-height: 22px;
+    line-height: 1.57;
     text-align: left;
     color: #888B8E;
     margin-bottom: 4px;
@@ -1911,7 +1911,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.25;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -1928,7 +1928,7 @@ img {
 
 .categories-link {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 1.57;
     text-align: left;
     color: #C2C3C5;
 }
@@ -1960,7 +1960,7 @@ img {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 1.56;
     text-align: left;
     text-transform: capitalize;
     color: #FFFFFF;
@@ -1974,7 +1974,7 @@ img {
 
 .posts-card-category {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5;
     text-align: left;
     text-transform: uppercase;
     color: #21E786;
@@ -1988,7 +1988,7 @@ img {
     font-family: Poppins;
     font-size: 12px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.5;
     text-align: left;
     text-transform: capitalize;
     color: #888B8E;
@@ -2004,7 +2004,7 @@ img {
 
 .tag-link {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 1.5;
     text-align: left;
     color: #FFFFFF;
     background-color: #41454A66;
@@ -2022,7 +2022,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
-    line-height: 44px;
+    line-height: 1.22;
     text-align: left;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -2031,7 +2031,7 @@ img {
 
 .blog-detail-reply-text {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: left;
     color: #C2C3C5;
     margin-bottom: 30px;
@@ -2091,7 +2091,7 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
-    line-height: 44px;
+    line-height: 1.22;
     text-align: center;
     color: #FFFFFF;
 }
@@ -2100,7 +2100,7 @@ img {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.56;
     text-align: center;
     color: #C2C3C5;
 }
@@ -2109,14 +2109,14 @@ img {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 44px;
     font-weight: 400;
-    line-height: 56px;
+    line-height: 1.27;
     text-align: center;
     color: #FFFFFF;
 }
 
 .get-in-text {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 60px;
@@ -2133,7 +2133,7 @@ img {
 .get-in-input,
 .get-in-textarea {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     text-align: left;
     color: #C2C3C5;
     background-color: #C2C3C526;
@@ -2144,7 +2144,7 @@ img {
 .get-in-input::placeholder,
 .get-in-textarea::placeholder {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     border: none;
 }
 
@@ -2196,7 +2196,7 @@ img {
 .get-in-submit-button {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     text-transform: uppercase;
     color: #FFFFFF;
     background-color: #0D0D11;
@@ -2225,7 +2225,7 @@ img {
 .sum-wrapper .num-item {
     font-family: "Bakbak One", Arial, sans-serif;
     font-size: 56px;
-    line-height: 68px;
+    line-height: 1.21;
     text-align: center;
     color: #FFFFFF;
     text-shadow: 0px 4px 13px #FFFFFF66;
