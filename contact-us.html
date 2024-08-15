@@ -154,7 +154,7 @@
                 <form action="#" method="post" class="contact-us-form">
                     <span class="contact-info">
                         <label for="name" class="visually-hidden">Name</label>
-                        <input class="get-in-input name"
+                        <input class="get-in-input name validation"
                         type="text" 
                         id="name"
                         name="name" 
@@ -166,7 +166,7 @@
                         inputmode="text"
                     />
                     <label for="email" class="visually-hidden">Email</label>
-                    <input class="get-in-input email"
+                    <input class="get-in-input email validation"
                         type="email" 
                         id="email"
                         name="email" 
@@ -178,13 +178,14 @@
                     />
                     </span>
                     <label for="phone" class="visually-hidden">Phone Number</label>
-                    <input class="get-in-input phone"
+                    <input class="get-in-input phone validation"
                         type="tel" 
                         id="phone"
                         name="phone" 
                         autocomplete="on" 
                         placeholder="Phone Number"
                         required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         inputmode="tel"
                     />
                     <label for="message" class="visually-hidden">Messenger</label>
@@ -289,8 +290,10 @@
                 <div class="footer-subscribe">
                     <h3 class="footer-nav-title">SUBSCRIBE</h3>
                     <form class="footer-subscribe-pages" action="#" method="get">
+                        <label for="email" class="visually-hidden">Email</label>
                         <input class="subscribe-input" 
                         type="email"
+                        id="email"
                         name="email" 
                         autocomplete="on"
                         placeholder="Enter your email"

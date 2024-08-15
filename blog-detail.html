@@ -249,11 +249,13 @@
                 </div>
                 <aside class="search-bar">      
                     <form action="#" method="get" class="search-form">
+                        <label for="search" class="visually-hidden">Search</label>
                         <input 
                             class="catalog-input search"
                             type="text" 
-                            autocomplete="off"
+                            id="search"
                             name="search"
+                            autocomplete="off"
                             placeholder="Search NFT" >
                             <button class="buttonn-search" type="submit">
                                 <svg class="search" width="20" height="20">
@@ -378,15 +380,19 @@
                 <p class="blog-detail-reply-text">Your email address will not be published. Required fields are marked</p>
                 <form method="get">
                     <div class="input-wrapper">
+                        <label for="name" class="visually-hidden">Name</label>
                         <input class="get-in-input reply-name"
-                        type="text" 
+                        type="text"
+                        id="name" 
                         name="name" 
                         autocomplete="name" 
                         placeholder="Name*"
                         required
                     />
+                    <label for="email" class="visually-hidden">Email</label>
                     <input class="get-in-input reply-email"
                         type="email" 
+                        id="email"
                         name="email" 
                         autocomplete="email"
                         placeholder="Enter your email*"
@@ -394,22 +400,27 @@
                     />
                     </div>
                     <div class="input-wrapper">
+                        <label for="phone" class="visually-hidden">Phone</label>
                         <input class="get-in-input reply-phone"
                         type="tel" 
+                        id="phone"
                         name="phone" 
                         autocomplete="on" 
                         placeholder="Phone Number*"
                         required
                     />
+                        <label for="website" class="visually-hidden">Website</label>
                     <input class="get-in-input reply-website"
                     type="url" 
+                    id="website"
                     name="website"  
                     placeholder="Website"
                     required
                     />
                     </div>
+                    <label for="message" class="visually-hidden">Messenger</label>
                     <textarea class="get-in-textarea"
-                        id="get-in-touch-comment"
+                        id="message"
                         name="comment" 
                         placeholder="Comment*"
                         cols="100"
@@ -508,9 +519,12 @@
                 </div>
                 <div class="footer-subscribe">
                     <h3 class="footer-nav-title">SUBSCRIBE</h3>
+                    <label for="email" class="visually-hidden">Email</label>
                     <form class="footer-subscribe-pages" action="#" method="get">
+                        <label for="email" class="visually-hidden">Email</label>
                         <input class="subscribe-input" 
                         type="email"
+                        id="email"
                         name="email" 
                         autocomplete="on"
                         placeholder="Enter your email"

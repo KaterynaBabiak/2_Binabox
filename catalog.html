@@ -335,11 +335,13 @@
                 <div class="catalog-header">
                     <h2 class="catalog-header-title">All Items</h2>
                     <form action="#" method="get" class="search-form">
+                        <label for="search" class="visually-hidden">Search</label>
                         <input 
                             class="catalog-input"
                             type="text" 
-                            autocomplete="off"
+                            id="search"
                             name="search"
+                            autocomplete="off"
                             placeholder="Search NFT" >
                             <button class="buttonn-search" type="submit">
                                 <svg class="search" width="20" height="20">
@@ -575,8 +577,10 @@
                 <div class="footer-subscribe">
                     <h3 class="footer-nav-title">SUBSCRIBE</h3>
                     <form class="footer-subscribe-pages" action="#" method="get">
+                        <label for="email" class="visually-hidden">Email</label>
                         <input class="subscribe-input" 
                         type="email"
+                        id="email"
                         name="email" 
                         autocomplete="on"
                         placeholder="Enter your email"
