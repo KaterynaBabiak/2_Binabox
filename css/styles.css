@@ -62,8 +62,8 @@ input:-webkit-autofill:focus {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  /*max-width: 100%;*/
+  /*height: auto;*/
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -82,6 +82,18 @@ img {
   /*padding: 0 30px;*/
 
   outline: 1px solid red;
+}
+
+.title {
+  font-family: "Bakbak One","Poppins", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #0d0d11;
+  z-index: 99;
 }
 
 .header-wrapper.container {
@@ -106,8 +118,7 @@ img {
 }
 
 .header .logo-img {
-  /*width: 36px;
-    height: 40px;*/
+  width: 100%;
   margin-right: 16px;
 }
 
@@ -132,6 +143,13 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #21E786;
 }
 
 .connect-wrapper {
@@ -198,14 +216,11 @@ img {
 /* -------------- HERO SECTION --------------*/
 
 .hero {
-  background: url(../img/gradient.webp),
+  background: 
+    url(../img/gradient.webp),
     linear-gradient(0.29deg, #040b11 33.65%, rgba(4, 11, 17, 0) 59.93%);
   background-repeat: no-repeat;
   margin-bottom: 60px;
-}
-
-.hero-wrapper {
-  /*display: flex;*/
 }
 
 .info-wrapper {
@@ -214,7 +229,8 @@ img {
   width: 750px;
 }
 
-.hero-main-title {
+.hero-title.main-page {
+  text-align: left;
   font-size: 72px;
   line-height: 1.11;
   color: #fff;
@@ -284,6 +300,8 @@ img {
 /* -------------- CARD-BAR SECTION --------------*/
 
 .card-bar {
+  display: flex;
+  justify-content: center;
   margin-bottom: 100px;
 }
 
@@ -294,18 +312,18 @@ img {
 
 .card-item {
   background: #ffffff0d;
-  width: 330px;
+}
+
+.card-link {
+  display: block;
   padding: 20px;
 }
 
 .card-item-img {
-  /*width: 290px;
-    height: 290px;*/
   margin-bottom: 20px;
 }
 
 .card-caption {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
   text-align: center;
@@ -319,24 +337,44 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+  /*background-image: url(../img/big-star.svg);
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  background-position: bottom left -255px;*/ 
+  position: relative;
 }
 
-.section-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.about-us::before {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/big-star.svg);
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  background-position: bottom left -275px;
+
+}
+
+.section.title {
   font-size: 44px;
-  font-weight: 400;
   line-height: 1.27;
   text-align: center;
   color: #fff;
   margin-bottom: 60px;
 }
 
-.section-title.about {
+.section.title.about {
   margin-bottom: 16px;
 }
 
 .hero-pages {
   background-color: #141b22;
+  margin-bottom: 100px;
+
+}
+
+.hero-pages .container {
   padding-top: 77px;
   padding-bottom: 77px;
 }
@@ -345,7 +383,6 @@ img {
   text-align: center;
   width: 930px;
   margin-bottom: 60px;
-
   margin: 0 auto 60px auto;
 }
 
@@ -362,13 +399,53 @@ img {
   background-color: #141b22;
   width: 570px;
   padding: 82px 30px 30px 30px;
+  z-index: 1;
+}
+
+.highlighting::before,
+.highlighting::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border-width: 3px;
+  border-style: solid;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.highlighting::before {
+  top: 0;
+  left: 0;  
+  border-image: linear-gradient(
+    to bottom right,
+    rgba(33, 231, 134, 1) 0%,
+    rgba(33, 231, 134, 0) 25%
+  )
+  1;
+}
+
+.highlighting::after {
+  bottom: 0;
+  right: 0;
+  border-image: linear-gradient(
+    to top left,
+    rgba(33, 231, 134, 1) 0%,
+    rgba(33, 231, 134, 0) 25%
+    )
+    1;
+  }
+
+.highlighting:hover::before,
+.highlighting:hover::after {
+  opacity: 1;
 }
 
 .about-us-number {
   position: absolute;
   top: 30px;
   left: 30px;
-  /*z-index: -1;*/
+  z-index: -1;
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 80px;
   line-height: 1.2;
@@ -379,9 +456,7 @@ img {
 }
 
 .about-us-item-title {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 24px;
-  font-weight: 400;
   line-height: 1.25;
   text-align: left;
   text-transform: uppercase;
@@ -409,9 +484,10 @@ img {
   line-height: 1.5;
   text-transform: uppercase;
   color: #fff;
-  background-color: #0d0d11;
+  background-color: transparent;
   border: 2px solid #21e786;
   padding: 12px 24px;
+  width: fit-content;
 
   margin: 0 auto;
   display: block;
@@ -419,7 +495,7 @@ img {
 
 .read-more-btn:hover,
 .read-more-btn:focus {
-  background: #21e7861a;
+  background-color: #21e7861a;
 }
 
 /* -------------- BINABOX-WORK SECTION --------------*/
@@ -432,8 +508,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 30px;
-  /*display: flex;
-    gap: 30px;*/
 }
 
 .binabox-card-item {
@@ -441,39 +515,37 @@ img {
   background-color: #141b22;
   width: 330px;
   padding: 30px 26px 26px 26px;
+  position: relative;
 }
 
-.binabox-card-item::before {
-  display: inline-block;
+.binabox-card::before {
+  display: block;
   content: "";
-
   width: 96px;
   height: 76px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
-.binabox-card-item.icon-card::before {
+.binabox-card.icon-card::before {
   background-image: url(../img/icons/card.svg);
 }
 
-.binabox-card-item.icon-check::before {
+.binabox-card.icon-check::before {
   background-image: url(../img/icons/check.svg);
 }
 
-.binabox-card-item.icon-money::before {
+.binabox-card.icon-money::before {
   background-image: url(../img/icons/money.svg);
 }
 
-.binabox-card-item.icon-shop::before {
+.binabox-card.icon-shop::before {
   background-image: url(../img/icons/shop.svg);
 }
 
-.binabox-card-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.binabox-card.title {
   font-size: 22px;
-  font-weight: 400;
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
@@ -496,25 +568,34 @@ img {
 }
 
 .map-info {
+  display: flex;
+  gap: 79px;
   background-color: #ffffff0d;
+  padding: 48px 43px;
   margin-bottom: 24px;
 }
 
-/*.map-img.big {
-    width: 470px;
-    height: 470px;
+.map-pictures {
+  display: flex;
+  gap: 20px;
 }
 
-.map-img.small {
-    width: 225px;
-    height: 225px;
-}*/
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-.map-describe-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.map-describe {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.map-describe.title {
   font-size: 36px;
   line-height: 1.22;
-  text-align: left;
+  align-self: baseline;
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 16px;
@@ -522,9 +603,8 @@ img {
 
 .map-phase-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
-  width: 297px;
   margin-bottom: 30px;
 }
 
@@ -534,14 +614,15 @@ img {
   align-items: center;
 }
 
-/*.phase-logo {
-    width: 24px;
-    height: 24px;
-}*/
+.map-describe .read-more-btn {
+  margin: 0;
+}
 
 .map-pagination {
   display: flex;
-  gap: 124px;
+  gap: 19px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .map-pagination-btn {
@@ -559,37 +640,62 @@ img {
   stroke: #21e786;
 }
 
+/**--------------------------------try to create pagination----------------------------**/
+
 .map-pagination-list {
+  display: flex;  
+  width: 100%;
+  }
+  
+.map-pagination-item {
+  position: relative;
   display: flex;
-  gap: 264px;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+  font-family: "Bakbak One", Arial, sans-serif;
+  text-transform: uppercase;  
+}
+  
+.map-pagination-item::before,
+.map-pagination-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 20%;
+  background-color: #434343;
+  z-index: -1;
 }
 
-.map-pagination-item {
-  font-family: "Bakbak One", Arial, sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #888b8e;
+.map-pagination.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 76px;
+  gap: 8px;
+}
+
+.map-pagination.title::before {
+  content: '';
+  width: 30px;
+  height: 30px;   
+}
+
+.map-pagination-item .icon-elipse {
   background-image: url(../img/icons/elipse.svg);
   background-repeat: no-repeat;
+  background-position: top center;
 }
 
-.map-pagination-item:hover,
-.map-pagination-item:focus {
+.map-pagination-item:hover .title {
   color: #fff;
+}
+
+.map-pagination-item:hover .icon-elipse {
   background-image: url(../img/icons/elipse-hower.svg);
-}
-
-.map-pagination-title {
-  position: relative;
-}
-
-.map-pagination-title::before {
-  display: block;
-  content: "";
-
-  width: 30px;
-  height: 30px;
-  margin-bottom: 8px;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 /* -------------- OUT-TEAM SECTION --------------*/
@@ -603,10 +709,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  /*display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;*/
 }
 
 .team-item {
@@ -615,18 +717,15 @@ img {
   width: 330px;
   height: 339px;
   padding: 40px 20px;
+  position: relative;
 }
 
 .team-img {
-  /*width: 120px;
-    height: 120px;*/
-  margin-bottom: 31px;
+  margin: 0 auto 31px auto;
 }
 
-.team-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.team.title {
   font-size: 24px;
-  font-weight: 400;
   line-height: 1.25;
   text-transform: capitalize;
   color: #fff;
@@ -652,6 +751,10 @@ img {
   margin-bottom: 100px;
 }
 
+.partners.about-us {
+  margin-bottom: 100px;
+}
+
 .partner-list {
   display: flex;
   flex-wrap: wrap;
@@ -661,6 +764,10 @@ img {
 .partner-item {
   width: 210px;
   height: 100px;
+}
+
+.partner-link {
+  display: block;
   padding: 20px 14px;
 }
 
@@ -676,15 +783,14 @@ img {
   background-color: #141b22;
 }
 
-/*.partner-img {
-    width: 160px;
-    height: 60px;
-}*/
-
 /* -------------- FAQS SECTION --------------*/
 
 .faqs {
   margin-bottom: 100px;
+}
+
+.faqs.page {
+    margin-bottom: 100px;
 }
 
 .faqs-wrap {
@@ -728,7 +834,6 @@ img {
 
 .faqs-list[open] .faqs-item {
   color: #fff;
-  /*border-bottom: 1px solid #434343;  */
 }
 
 .faqs-list[open] .faqs-item-info {
@@ -736,9 +841,64 @@ img {
   padding: 16px 20px 30px 20px;
 }
 
-/* -------------- FOOTER SECTION --------------*/
+/* -------------- JOIN-US SECTION --------------*/
 
-.section-title.join {
+.join-us {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -142px;
+}
+
+.join-us .container {
+  background: 
+    linear-gradient(268.28deg, #2333de -1.34%, #0abe66 100%);
+  padding-top: 40px;
+  padding-bottom: 48px;    
+}  
+
+.join-us::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(/img/big-star.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 255px;
+  height: 255px;
+  transform: rotate(-10deg);
+  top: 76px;
+  left: -5px;
+}
+
+.join-us::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(/img/big-star.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 136px;
+  height: 136px;
+  top: 0;
+  left: 700px;
+}
+
+.join-us::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(/img/big-star.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-blend-mode: screen;
+  width: 322px;
+  height: 322px;
+  bottom: -15px;
+  right: 15px;
+  overflow: hidden;
+}
+
+.section.title.join {
   margin-bottom: 8px;
 }
 
@@ -751,17 +911,15 @@ img {
   color: #f7f7f9;
 }
 
-.join-us {
-  background: linear-gradient(268.28deg, #2333de -1.34%, #0abe66 100%);
-  padding-top: 40px;
-  padding-bottom: 48px;
-}
-
 .join-us-btn-list {
   display: flex;
   justify-content: center;
   gap: 37px;
   margin-bottom: 40px;
+}
+
+.join-us .join-us-btn-list {
+  margin-bottom: 0;
 }
 
 .join-us-btn-item {
@@ -792,6 +950,16 @@ img {
   background-color: #21e786;
   border: none;
   padding: 12px 24px;
+}
+
+/* -------------- FOOTER SECTION --------------*/
+
+.footer.pages {
+  background-color: #141B22;
+}
+
+.footer.pages .container {
+  padding-top: 202px;
 }
 
 .join-us-subscribe {
@@ -863,11 +1031,6 @@ img {
   gap: 16px;
 }
 
-/*.footer-copyright-part .logo-img {
-    width: 24px;
-    height: 27px;    
-}*/
-
 .footer-copyright {
   font-size: 14px;
   line-height: 1.57;
@@ -881,7 +1044,6 @@ img {
 .footer-nav-link {
   font-size: 14px;
   line-height: 1.57;
-  /*text-align: right;*/
   text-transform: capitalize;
   color: #c2c3c5;
 }
@@ -892,14 +1054,13 @@ img {
 
 /* -------------- EXPLORE-COLECTIONS SECTION --------------*/
 
-.hero-pages {
-  margin-bottom: 100px;
+.hero-wrapper {
+  position: relative;
+  display: flex;
 }
 
 .hero-title {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 44px;
-  font-weight: 400;
   line-height: 1.27;
   text-align: center;
   color: #fff;
@@ -914,7 +1075,6 @@ img {
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.43;
-  /*text-align: center;*/
   text-transform: uppercase;
   color: #888b8e;
 }
@@ -923,14 +1083,22 @@ img {
   color: #21e786;
 }
 
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
 /* -------------- CATALOG SECTION --------------*/
+
+.catalog {
+    margin-bottom: 100px;
+}
 
 /* -------------- catalog header --------------*/
 
 .catalog-header-title {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 44px;
-  font-weight: 400;
   line-height: 1.27;
   text-align: left;
   color: #fff;
@@ -991,7 +1159,7 @@ img {
 
 /* -------------- catalog filter --------------*/
 
-.catalog {
+.catalog .container {
   display: flex;
   gap: 80px;
   margin-bottom: 100px;
@@ -1026,7 +1194,6 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 16px 12px;
-
   cursor: pointer;
 }
 
@@ -1183,7 +1350,6 @@ img {
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
-  /*text-align: center;*/
   text-transform: uppercase;
   color: #fff;
 }
@@ -1229,12 +1395,11 @@ img {
   gap: 130px;
 }
 
-.footer-nav-title {
+.footer-nav.title {
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  /*text-align: center;*/
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1287,32 +1452,39 @@ img {
   margin-bottom: 100px;
 }
 
-.card-img {
-  /*width: 690px;
-    height: 690px;*/
+.catalog-card {
+    display: flex;
+    gap: 99px;
+}
+
+.card-img-wrapper {
+    position: relative;
+}
+
+.card-img { 
   background: #c2c3c5;
 }
 
 .card-counter {
   background-color: #ffffff4d;
   width: 608px;
-  /*display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;*/
   padding: 18px 74px 20px 74px;
+  position: absolute;
+  left: 41px;
+  bottom: 20px;
 }
 
 .card-counter-info {
   display: flex;
   gap: 22px;
+  align-items: flex-start;
 }
 
 .counter-wrap {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .card-counter-title {
@@ -1329,7 +1501,6 @@ img {
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 44px;
   line-height: 1.27;
-  /*text-align: left;*/
   text-transform: uppercase;
   color: #fff;
 }
@@ -1338,10 +1509,14 @@ img {
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
-  /*text-align: left;*/
   text-transform: uppercase;
   color: #f6f6f6;
-  margin-inline-start: 0px;
+}
+
+.counter-colon {
+  font-family: "Bakbak One", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.22;
 }
 
 .counter-separator {
@@ -1414,16 +1589,17 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
   text-transform: uppercase;
   color: #141b22;
   background-color: #21e786;
   border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 16px 228px;
+  padding: 16px 16px;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .card-socialmedia-list {
@@ -1438,16 +1614,16 @@ img {
   text-transform: uppercase;
   color: #fff;
   border: 2px solid #888b8e;
-  padding: 16px 76px;
+  padding: 16px 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  width: 290px;
 }
 
-.colections-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.colections.title {
   font-size: 44px;
-  font-weight: 400;
   line-height: 1.27;
   text-align: center;
   color: #fff;
@@ -1459,6 +1635,7 @@ img {
 }
 
 .catalog-collections-range .card-list {
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -1481,7 +1658,6 @@ img {
 
 .scrollbar-btn:hover,
 .scrollbar-btn:focus {
-  color: #141b22;
   background-color: #21e786;
 }
 
@@ -1490,7 +1666,7 @@ img {
   stroke: #fff;
 }
 
-.scrollbar-icon:hover {
+.scrollbar-btn:hover .scrollbar-icon {
   fill: #141b22;
   stroke: #141b22;
 }
@@ -1514,10 +1690,26 @@ img {
   background: #141b22;
   width: 450px;
   padding: 30px 20px;
+
+  position: relative;
 }
 
-.blog-card-label {
-  font-family: "Bakbak One", Arial, sans-serif;
+.blog-card-label.title {
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  color: #fff;
+  background-color: #21e786b2;
+  padding: 8px 10px;
+  width: fit-content;
+  height: fit-content;
+
+  position: absolute;
+  top: 44px;
+  right: 34px;
+}
+
+.blog-detail-card-label.title {
   font-size: 14px;
   line-height: 1.57;
   text-align: center;
@@ -1529,8 +1721,6 @@ img {
 }
 
 .blog-card-img {
-  /*width: 410px;
-    height: 410px;*/
   margin-bottom: 25px;
 }
 
@@ -1543,7 +1733,6 @@ img {
 
 .blog-card-author,
 .blog-card-date {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -1556,7 +1745,6 @@ img {
 .blog-card-date::before {
   display: block;
   content: "";
-
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -1571,8 +1759,7 @@ img {
   background-image: url(/img/icons/calendar.svg);
 }
 
-.blog-card-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.blog-card.title {
   font-size: 36px;
   line-height: 1.22;
   text-align: left;
@@ -1601,7 +1788,6 @@ img {
 .blog-card-btn::after {
   display: block;
   content: "";
-
   width: 19px;
   height: 24px;
   background-repeat: no-repeat;
@@ -1611,21 +1797,6 @@ img {
 .blog-card-btn.icon-card::after {
   background-image: url(/img/icons/read-arrow.svg);
 }
-
-/*.blog-prev-button,
-.blog-next-button {
-    color: #FFF;
-    background-color: #0D0D11;
-    border: 1px solid #21E786;
-}
-
-.blog-prev-button:hover,
-.blog-prev-button:focus,
-.blog-next-button:hover,
-.blog-next-button:focus {
-    color: #141B22;
-    background-color: #21E786;
-}*/
 
 .blog-pagination,
 .blog-pagination-list {
@@ -1657,6 +1828,10 @@ img {
 /* -------------- BLOG-DETAIL PAGE --------------*/
 /* -------------- BLOG-DETAIL PAGE --------------*/
 
+.blog-detail {
+    margin-bottom: 60px;
+}
+
 .blog-detail .wrapper {
   display: flex;
   gap: 60px;
@@ -1676,15 +1851,11 @@ img {
 }
 
 .blog-detail-main-img {
-  /*width: 1020px;
-    height: 557px;*/
   margin-bottom: 30px;
 }
 
-.blog-detail-card-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.detail-card.title {
   font-size: 36px;
-  font-weight: 400;
   line-height: 1.22;
   text-transform: capitalize;
   text-align: left;
@@ -1706,7 +1877,6 @@ img {
 .blog-detail-card-date::before {
   display: block;
   content: "";
-
   width: 24px;
   height: 24px;
   background-repeat: no-repeat;
@@ -1794,7 +1964,7 @@ img {
   margin-bottom: 20px;
 }
 
-.blog-detail-card .blog-detail-card-title {
+.blog-detail-card .detail-card.title {
   margin-bottom: 12px;
 }
 
@@ -1804,17 +1974,11 @@ img {
   margin-bottom: 30px;
 }
 
-/*.blog-detail-img {
-    width: 495px;
-    height: 390px;
-}*/
-
 .blog-detail-card {
   margin-bottom: 24px;
 }
 
 .blog-detail-subtitle {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -1832,7 +1996,6 @@ img {
 .blog-detail-share {
   display: flex;
   gap: 12px;
-  /*align-items: center;*/
 }
 
 .caption-list,
@@ -1870,11 +2033,6 @@ img {
   display: flex;
   gap: 16px;
 }
-
-/*.browsing-img {
-    width: 80px;
-    height: 80px;
-}*/
 
 .browsing-label {
   font-size: 14px;
@@ -1917,9 +2075,7 @@ img {
 }
 
 .search-bar-subtitle {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 24px;
-  font-weight: 400;
   line-height: 1.25;
   text-align: left;
   text-transform: uppercase;
@@ -2019,13 +2175,12 @@ img {
 }
 
 .blog-detail-reply {
-  width: 1020px;
+  height: fit-content;
+  margin-bottom: 100px;
 }
 
-.blog-detail-reply-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.blog-detail-reply.title {
   font-size: 36px;
-  font-weight: 400;
   line-height: 1.22;
   text-align: left;
   text-transform: uppercase;
@@ -2054,7 +2209,12 @@ img {
 
 .input-wrapper .reply-email,
 .input-wrapper .reply-website {
-  width: 100%;
+  width: 665px;
+}
+
+.reply-form .get-in-textarea {
+  width: 1020px;
+  margin-bottom: 0;
 }
 
 /* -------------- CONTACT-US PAGE --------------*/
@@ -2090,10 +2250,8 @@ img {
   margin-bottom: 20px;
 }
 
-.contact-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.contact.title {
   font-size: 36px;
-  font-weight: 400;
   line-height: 1.22;
   text-align: center;
   color: #fff;
@@ -2104,10 +2262,8 @@ img {
   color: #c2c3c5;
 }
 
-.get-in-title {
-  font-family: "Bakbak One", Arial, sans-serif;
+.get-in.title {
   font-size: 44px;
-  font-weight: 400;
   line-height: 1.27;
   text-align: center;
   color: #fff;
@@ -2216,14 +2372,12 @@ img {
 }
 
 .sum-wrapper .subhead-item {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 20px;
   text-align: center;
   margin-bottom: 8px;
 }
 
 .sum-wrapper .num-item {
-  font-family: "Bakbak One", Arial, sans-serif;
   font-size: 56px;
   line-height: 1.21;
   text-align: center;

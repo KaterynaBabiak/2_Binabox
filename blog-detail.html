@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="header-wrapper container">
-            <a href="#" class="logo-link">
+            <a href="./index.html" class="logo-link">
                 <img class="logo-img"
                     src="./img/logo.webp" 
                     alt="Binabox logo" 
@@ -40,7 +40,7 @@
                         </a>
                     </li>
                     <li class="header-nav-item">
-                        <a href="#roadmap" class="header-nav-link">
+                        <a href="./index.html#roadmap" class="header-nav-link">
                             roadmap
                             <svg class="icon-arrow-down" width="24" height="24">
                                 <use href="./img/icons/sprite.svg#icon-arrow-down"></use>
@@ -94,7 +94,7 @@
     <main>
         <section class="hero-pages">
             <div class="container">
-                <h1 class="hero-title">BLOG DETAIL</h1>
+                <h1 class="hero-title title">BLOG DETAIL</h1>
                 <nav class="hero-navigation">
                     <ul class="hero-list">
                         <li class="hero-item">
@@ -126,8 +126,8 @@
                             alt="A massive green dragon standing in front of a dark, imposing castle" 
                             width="1020" height="557">
                         <div class="detail-card-wrapper">
-                            <h3 class="blog-detail-card-title">Enior Apple employee alleges sexism at</h3>
-                            <p class="blog-card-label">GAMING</p>
+                            <h3 class="detail-card title">Enior Apple employee alleges sexism at</h3>
+                            <p class="blog-detail-card-label title">GAMING</p>
                         </div>
                         <div class="blog-card-wrap">
                             <p class="blog-detail-card-author icon-card">TONY NGUYEN</p>
@@ -160,7 +160,7 @@
                                 alt="Green dragon standing amidst a ruined cityscape"
                                 width="495" height="390">
                         </div>
-                        <h3 class="blog-detail-card-title">NFTs are digital assets that represent real-world objects</h3>
+                        <h3 class="detail-card title">NFTs are digital assets that represent real-world objects</h3>
                         <p class="blog-detail-card-text">
                             Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.
                             <br>
@@ -168,14 +168,14 @@
                         </p>
                     </article>
                     <article class="blog-detail-card">
-                        <h3 class="blog-detail-card-title">NFT Avatar Generators</h3>
+                        <h3 class="detail-card title">NFT Avatar Generators</h3>
                         <p class="blog-detail-card-text">
                             You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale.
                         </p>
                     </article>
                     <div class="blog-detail-tags">
                         <div class="blog-detail-caption">
-                            <p class="blog-detail-subtitle">
+                            <p class="blog-detail-subtitle title">
                                 Tags:
                             </p>
                             <ul class="caption-list">
@@ -191,7 +191,7 @@
                             </ul>
                         </div>
                         <div class="blog-detail-share">
-                            <p class="blog-detail-subtitle">
+                            <p class="blog-detail-subtitle title">
                                 Share:
                             </p>  
                             <ul class="share-list">
@@ -245,6 +245,7 @@
                             </a>
                         </article>
                     </div>
+
                 </div>
                 <aside class="search-bar">      
                     <form action="#" method="get" class="search-form">
@@ -263,7 +264,7 @@
                             </button>
                     </form>
                     <div class="categories">
-                        <h2 class="search-bar-subtitle">categories</h2>
+                        <h2 class="search-bar-subtitle title">categories</h2>
                         <ul class="categories-list">
                             <li class="categories-item">
                                 <a href="#" class="categories-link">NFT (12)</a>
@@ -289,7 +290,7 @@
                         </ul>
                     </div>
                     <div class="last-posts">
-                        <h2 class="search-bar-subtitle">recent posts</h2>
+                        <h2 class="search-bar-subtitle title">recent posts</h2>
                         <ul class="posts-list">
                             <li class="posts-item">
                                 <article class="posts-card">
@@ -345,7 +346,7 @@
                         </ul>
                     </div>
                     <div class="tags">
-                        <h2 class="search-bar-subtitle">tag</h2>
+                        <h2 class="search-bar-subtitle title">tag</h2>
                         <ul class="tags-list">
                             <li class="tag-item">
                                 <a href="#" class="tag-link">NFT</a>
@@ -374,10 +375,10 @@
             </div>
         </section>
         <section class="blog-detail-reply">
-            <div class="container">
-                <h2 class="blog-detail-reply-title">LEAVE A REPLY</h2>
+            <div class="reply container">
+                <h2 class="blog-detail-reply title">LEAVE A REPLY</h2>
                 <p class="blog-detail-reply-text">Your email address will not be published. Required fields are marked</p>
-                <form method="get">
+                <form class="reply-form"action="#" method="post">
                     <div class="input-wrapper">
                         <label for="name" class="visually-hidden">Name</label>
                         <input class="get-in-input reply-name"
@@ -428,161 +429,164 @@
                 </form>
             </div>
         </section>
+        <section class="join-us">
+            <div class="container">
+                <h2 class="section title join">JOIN OUR COMMUNITY</h2>
+                <p class="join-us-text white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <ul class="join-us-btn-list">
+                    <li class="join-us-btn-item">
+                        <a href="#" class="join-us-discord-link">
+                            <svg class="join-socialmedia-icon" width="24" height="24">
+                                <use href="./img/icons/sprite.svg#icon-discord"></use>
+                            </svg>
+                            discord
+                        </a>
+                    </li>
+                    <li>
+                        <button type="button" class="join-us-whitelist-btn">
+                            whitelist now
+                        </button>
+                    </li>
+                </ul>
+            </div>  
+        </section>
     </main>
-    <footer class="footer">
-        <div class="join-us">
-            <h2 class="section-title join">JOIN OUR COMMUNITY</h2>
-            <p class="join-us-text white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <ul class="join-us-btn-list">
-                <li class="join-us-btn-item">
-                    <a href="#" class="join-us-discord-link">
-                        <svg class="join-socialmedia-icon" width="24" height="24">
-                            <use href="./img/icons/sprite.svg#icon-discord"></use>
-                        </svg>
-                        discord
+    <footer class="footer pages">
+        <div class="container">  
+            <div class="footer-navigation">
+                <div class="footer-logo">
+                    <a href="#" class="logo-link">
+                        <img class="logo-img"
+                            src="./img/logo.webp" 
+                            alt="Binabox logo" 
+                            width="24" height="27">
+                        BINABOX
                     </a>
-                </li>
-                <li>
-                    <button type="button" class="join-us-whitelist-btn">
-                        whitelist now
-                    </button>
-                </li>
-            </ul>
-        </div>   
-        <div class="footer-navigation">
-            <div class="footer-logo">
-                <a href="#" class="logo-link">
-                    <img class="logo-img"
-                        src="./img/logo.webp" 
-                        alt="Binabox logo" 
-                        width="24" height="27">
-                    BINABOX
-                </a>
-                <p class="footer-catalog-logo-text">We are the best way to check the rarity of NFT collection.</p>
+                    <p class="footer-catalog-logo-text">We are the best way to check the rarity of NFT collection.</p>
+                </div>
+                <nav class="footer-nav">
+                    <div class="footer-nav-info">
+                        <h3 class="footer-nav title">SUBSCRIBE</h3>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item">
+                                <a href="./index.html" class="footer-nav-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="./about-us.html" class="footer-nav-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="./index.html#roadmap" class="footer-nav-link">
+                                    Roadmap
+                                </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="./index.html#our_team" class="footer-nav-link">
+                                    Our Team
+                                </a>
+                            </li>
+                            <li class="footer-nav-item">
+                                <a href="./faqs.html" class="footer-nav-link">
+                                    FAQs
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-company-info">
+                        <h3 class="footer-nav title">COMPANY</h3>
+                        <ul class="footer-company-info-list">
+                            <li class="footer-company-info-item">
+                                <a href="#" class="footer-nav-link">
+                                    Terms Canditions
+                                </a>
+                            </li>
+                            <li class="footer-company-info-item">
+                                <a href="#" class="footer-nav-link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="footer-company-info-item">
+                                <a href="#" class="footer-nav-link">
+                                    Whitepaper
+                                </a>
+                            </li>
+                            <li class="footer-company-info-item">
+                                <a href="#" class="footer-nav-link">
+                                    Help Center
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-subscribe">
+                        <h3 class="footer-nav title">SUBSCRIBE</h3>
+                        <form class="footer-subscribe-pages" action="#" method="get">
+                            <label for="email" class="visually-hidden">Email</label>
+                            <input class="subscribe-input" 
+                            type="email"
+                            id="email"
+                            name="email" 
+                            autocomplete="on"
+                            placeholder="Enter your email"
+                            required
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                            inputmode="email"
+                        >
+                        <button class="join-us-subscribe-btn" type="submit" >SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>     
+            <div class="footer-bottom">
+                <p class="footer-copyright">BINABOX 2022 - ALL rights reserved</p>
+                <ul class="footer-socialmedia-list">
+                    <li class="footer-socialmedia-item">
+                        <a href="#" target="_blank" class="footer-socialmedia-link">
+                            <svg class="footer-socialmedia-icon" width="20" height="20">
+                                <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socialmedia-item">
+                        <a href="https://www.facebook.com" target="_blank" class="footer-socialmedia-link">
+                            <svg class="footer-socialmedia-icon" width="20" height="20">
+                                <use href="./img/icons/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socialmedia-item">
+                        <a href="https://t.me" target="_blank" class="footer-socialmedia-link">
+                            <svg class="footer-socialmedia-icon" width="20" height="20">
+                                <use href="./img/icons/sprite.svg#icon-telegram-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socialmedia-item">
+                        <a href="https://www.youtube.com/" target="_blank" class="footer-socialmedia-link">
+                            <svg class="footer-socialmedia-icon" width="20" height="20">
+                                <use href="./img/icons/sprite.svg#icon-youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socialmedia-item">
+                        <a href="https://www.tiktok.com" target="_blank" class="footer-socialmedia-link">
+                            <svg class="footer-socialmedia-icon" width="20" height="20">
+                                <use href="./img/icons/sprite.svg#icon-tiktok"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-socialmedia-item">
+                        <a href="https://discord.com" target="_blank" class="footer-socialmedia-link">
+                            <svg class="footer-socialmedia-icon" width="20" height="20">
+                                <use href="./img/icons/sprite.svg#icon-discord"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+    
             </div>
-            <nav class="footer-nav">
-                <div class="footer-nav-info">
-                    <h3 class="footer-nav-title">SUBSCRIBE</h3>
-                    <ul class="footer-nav-list">
-                        <li class="footer-nav-item">
-                            <a href="./index.html" class="footer-nav-link">
-                                Home
-                            </a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="./about-us.html" class="footer-nav-link">
-                                About
-                            </a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">
-                                Roadmap
-                            </a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="#" class="footer-nav-link">
-                                Our Team
-                            </a>
-                        </li>
-                        <li class="footer-nav-item">
-                            <a href="./faqs.html" class="footer-nav-link">
-                                FAQs
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-company-info">
-                    <h3 class="footer-nav-title">COMPANY</h3>
-                    <ul class="footer-company-info-list">
-                        <li class="footer-company-info-item">
-                            <a href="#" class="footer-nav-link">
-                                Terms Canditions
-                            </a>
-                        </li>
-                        <li class="footer-company-info-item">
-                            <a href="#" class="footer-nav-link">
-                                Privacy Policy
-                            </a>
-                        </li>
-                        <li class="footer-company-info-item">
-                            <a href="#" class="footer-nav-link">
-                                Whitepaper
-                            </a>
-                        </li>
-                        <li class="footer-company-info-item">
-                            <a href="#" class="footer-nav-link">
-                                Help Center
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-subscribe">
-                    <h3 class="footer-nav-title">SUBSCRIBE</h3>
-                    <label for="email" class="visually-hidden">Email</label>
-                    <form class="footer-subscribe-pages" action="#" method="get">
-                        <label for="email" class="visually-hidden">Email</label>
-                        <input class="subscribe-input" 
-                        type="email"
-                        id="email"
-                        name="email" 
-                        autocomplete="on"
-                        placeholder="Enter your email"
-                        required
-                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                        inputmode="email"
-                    >
-                    <button class="join-us-subscribe-btn" type="submit" >SUBSCRIBE</button>
-                    </form>
-                </div>
-            </nav>
-        </div>     
-        <div class="footer-bottom">
-            <p class="footer-copyright">BINABOX 2022 - ALL rights reserved</p>
-            <ul class="footer-socialmedia-list">
-                <li class="footer-socialmedia-item">
-                    <a href="#" target="_blank" class="footer-socialmedia-link">
-                        <svg class="footer-socialmedia-icon" width="20" height="20">
-                            <use href="./img/icons/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-socialmedia-item">
-                    <a href="https://www.facebook.com" target="_blank" class="footer-socialmedia-link">
-                        <svg class="footer-socialmedia-icon" width="20" height="20">
-                            <use href="./img/icons/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-socialmedia-item">
-                    <a href="https://t.me" target="_blank" class="footer-socialmedia-link">
-                        <svg class="footer-socialmedia-icon" width="20" height="20">
-                            <use href="./img/icons/sprite.svg#icon-telegram-1"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-socialmedia-item">
-                    <a href="https://www.youtube.com/" target="_blank" class="footer-socialmedia-link">
-                        <svg class="footer-socialmedia-icon" width="20" height="20">
-                            <use href="./img/icons/sprite.svg#icon-youtube"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-socialmedia-item">
-                    <a href="https://www.tiktok.com" target="_blank" class="footer-socialmedia-link">
-                        <svg class="footer-socialmedia-icon" width="20" height="20">
-                            <use href="./img/icons/sprite.svg#icon-tiktok"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="footer-socialmedia-item">
-                    <a href="https://discord.com" target="_blank" class="footer-socialmedia-link">
-                        <svg class="footer-socialmedia-icon" width="20" height="20">
-                            <use href="./img/icons/sprite.svg#icon-discord"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-
         </div>
     </footer>
 </body>
