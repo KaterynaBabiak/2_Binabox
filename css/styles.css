@@ -85,15 +85,15 @@ img {
 }
 
 .title {
-    font-family: "Bakbak One","Poppins", Arial, sans-serif;
-    font-weight: 400;
+  font-family: "Bakbak One","Poppins", Arial, sans-serif;
+  font-weight: 400;
 }
 
 .header {
-    position: sticky;
-    top: 0;
-    background-color: #0d0d11;
-    z-index: 99;
+  position: sticky;
+  top: 0;
+  background-color: #0d0d11;
+  z-index: 99;
 }
 
 .header-wrapper.container {
@@ -312,7 +312,10 @@ img {
 
 .card-item {
   background: #ffffff0d;
-  width: 330px;
+}
+
+.card-link {
+  display: block;
   padding: 20px;
 }
 
@@ -423,20 +426,20 @@ img {
 }
 
 .highlighting::after {
-    bottom: 0;
-    right: 0;
-    border-image: linear-gradient(
-        to top left,
-        rgba(33, 231, 134, 1) 0%,
-        rgba(33, 231, 134, 0) 25%
-      )
-      1;
+  bottom: 0;
+  right: 0;
+  border-image: linear-gradient(
+    to top left,
+    rgba(33, 231, 134, 1) 0%,
+    rgba(33, 231, 134, 0) 25%
+    )
+    1;
   }
 
-  .highlighting:hover::before,
-  .highlighting:hover::after {
-    opacity: 1;
-  }
+.highlighting:hover::before,
+.highlighting:hover::after {
+  opacity: 1;
+}
 
 .about-us-number {
   position: absolute;
@@ -573,20 +576,20 @@ img {
 }
 
 .map-pictures {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .image-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .map-describe {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 .map-describe.title {
@@ -612,7 +615,7 @@ img {
 }
 
 .map-describe .read-more-btn {
-    margin: 0;
+  margin: 0;
 }
 
 .map-pagination {
@@ -640,63 +643,60 @@ img {
 /**--------------------------------try to create pagination----------------------------**/
 
 .map-pagination-list {
-    display: flex;  
-    width: 100%;
+  display: flex;  
+  width: 100%;
   }
   
-  .map-pagination-item {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    cursor: pointer;
-
-    font-family: "Bakbak One", Arial, sans-serif;
-    text-transform: uppercase;  
-  }
+.map-pagination-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+  font-family: "Bakbak One", Arial, sans-serif;
+  text-transform: uppercase;  
+}
   
-  .map-pagination-item::before,
-  .map-pagination-item::after {
-    content: '';
-    /*display: block;*/
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 20%;
-    background-color: #434343;
-    z-index: -1;
-  }
+.map-pagination-item::before,
+.map-pagination-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 20%;
+  background-color: #434343;
+  z-index: -1;
+}
 
-  .map-pagination.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 76px;
-    gap: 8px;
-  }
+.map-pagination.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 76px;
+  gap: 8px;
+}
 
-  .map-pagination.title::before {
-    content: '';
-      
-    width: 30px;
-    height: 30px;   
-  }
+.map-pagination.title::before {
+  content: '';
+  width: 30px;
+  height: 30px;   
+}
 
-  .map-pagination-item .icon-elipse {
-    background-image: url(../img/icons/elipse.svg);
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
+.map-pagination-item .icon-elipse {
+  background-image: url(../img/icons/elipse.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 
-  .map-pagination-item:hover .title {
-    color: #fff;
-  }
+.map-pagination-item:hover .title {
+  color: #fff;
+}
 
-  .map-pagination-item:hover .icon-elipse {
-    background-image: url(../img/icons/elipse-hower.svg);
-    background-repeat: no-repeat;
-    background-position: top center;
-  }
+.map-pagination-item:hover .icon-elipse {
+  background-image: url(../img/icons/elipse-hower.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 
 /* -------------- OUT-TEAM SECTION --------------*/
 
@@ -709,10 +709,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  /*display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;*/
 }
 
 .team-item {
@@ -721,12 +717,11 @@ img {
   width: 330px;
   height: 339px;
   padding: 40px 20px;
-
   position: relative;
 }
 
 .team-img {
-    margin: 0 auto 31px auto;
+  margin: 0 auto 31px auto;
 }
 
 .team.title {
@@ -757,7 +752,7 @@ img {
 }
 
 .partners.about-us {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 .partner-list {
@@ -769,6 +764,10 @@ img {
 .partner-item {
   width: 210px;
   height: 100px;
+}
+
+.partner-link {
+  display: block;
   padding: 20px 14px;
 }
 
@@ -784,11 +783,6 @@ img {
   background-color: #141b22;
 }
 
-/*.partner-img {
-    width: 160px;
-    height: 60px;
-}*/
-
 /* -------------- FAQS SECTION --------------*/
 
 .faqs {
@@ -797,7 +791,7 @@ img {
 
 .faqs.page {
     margin-bottom: 100px;
-  }
+}
 
 .faqs-wrap {
   display: inline-flex;
@@ -840,7 +834,6 @@ img {
 
 .faqs-list[open] .faqs-item {
   color: #fff;
-  /*border-bottom: 1px solid #434343;  */
 }
 
 .faqs-list[open] .faqs-item-info {
@@ -857,17 +850,10 @@ img {
 }
 
 .join-us .container {
-    background: 
-      /*url(/img/big-star.svg),
-      url(/img/big-star.svg),
-      url(/img/big-star.svg),*/
-      linear-gradient(268.28deg, #2333de -1.34%, #0abe66 100%);
-    /*background-repeat: no-repeat;*/
-    /*background-size: 255px auto, 135px auto, 310px auto, cover; 
-    background-position: top left 25%, center;
-    background-blend-mode: screen;*/
-    padding-top: 40px;
-    padding-bottom: 48px;    
+  background: 
+    linear-gradient(268.28deg, #2333de -1.34%, #0abe66 100%);
+  padding-top: 40px;
+  padding-bottom: 48px;    
 }  
 
 .join-us::before {
@@ -877,13 +863,39 @@ img {
   background-image: url(/img/big-star.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: screen;
   width: 255px;
   height: 255px;
-  transform: rotate(10deg);
+  transform: rotate(-10deg);
   top: 76px;
   left: -5px;
-  opacity: 0px;
+}
+
+.join-us::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(/img/big-star.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 136px;
+  height: 136px;
+  top: 0;
+  left: 700px;
+}
+
+.join-us::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(/img/big-star.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-blend-mode: screen;
+  width: 322px;
+  height: 322px;
+  bottom: -15px;
+  right: 15px;
+  overflow: hidden;
 }
 
 .section.title.join {
@@ -907,7 +919,7 @@ img {
 }
 
 .join-us .join-us-btn-list {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .join-us-btn-item {
@@ -943,11 +955,11 @@ img {
 /* -------------- FOOTER SECTION --------------*/
 
 .footer.pages {
-    background-color: #141B22;
+  background-color: #141B22;
 }
 
 .footer.pages .container {
-    padding-top: 202px;
+  padding-top: 202px;
 }
 
 .join-us-subscribe {
@@ -1019,11 +1031,6 @@ img {
   gap: 16px;
 }
 
-/*.footer-copyright-part .logo-img {
-    width: 24px;
-    height: 27px;    
-}*/
-
 .footer-copyright {
   font-size: 14px;
   line-height: 1.57;
@@ -1037,7 +1044,6 @@ img {
 .footer-nav-link {
   font-size: 14px;
   line-height: 1.57;
-  /*text-align: right;*/
   text-transform: capitalize;
   color: #c2c3c5;
 }
@@ -1050,7 +1056,7 @@ img {
 
 .hero-wrapper {
   position: relative;
-    display: flex;
+  display: flex;
 }
 
 .hero-title {
@@ -1069,7 +1075,6 @@ img {
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.43;
-  /*text-align: center;*/
   text-transform: uppercase;
   color: #888b8e;
 }
@@ -1345,7 +1350,6 @@ img {
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
-  /*text-align: center;*/
   text-transform: uppercase;
   color: #fff;
 }
@@ -1396,7 +1400,6 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  /*text-align: center;*/
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1465,12 +1468,7 @@ img {
 .card-counter {
   background-color: #ffffff4d;
   width: 608px;
-  /*display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;*/
   padding: 18px 74px 20px 74px;
-
   position: absolute;
   left: 41px;
   bottom: 20px;
@@ -1511,7 +1509,6 @@ img {
   font-family: "Bakbak One", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
-  /*text-align: left;*/
   text-transform: uppercase;
   color: #f6f6f6;
 }
@@ -1638,6 +1635,7 @@ img {
 }
 
 .catalog-collections-range .card-list {
+  justify-content: center;
   margin-bottom: 30px;
 }
 
@@ -1712,19 +1710,17 @@ img {
 }
 
 .blog-detail-card-label.title {
-    font-size: 14px;
-    line-height: 1.57;
-    text-align: center;
-    color: #fff;
-    background-color: #21e786b2;
-    padding: 8px 10px;
-    width: fit-content;
-    height: fit-content;
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  color: #fff;
+  background-color: #21e786b2;
+  padding: 8px 10px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .blog-card-img {
-  /*width: 410px;
-    height: 410px;*/
   margin-bottom: 25px;
 }
 
@@ -1801,21 +1797,6 @@ img {
 .blog-card-btn.icon-card::after {
   background-image: url(/img/icons/read-arrow.svg);
 }
-
-/*.blog-prev-button,
-.blog-next-button {
-    color: #FFF;
-    background-color: #0D0D11;
-    border: 1px solid #21E786;
-}
-
-.blog-prev-button:hover,
-.blog-prev-button:focus,
-.blog-next-button:hover,
-.blog-next-button:focus {
-    color: #141B22;
-    background-color: #21E786;
-}*/
 
 .blog-pagination,
 .blog-pagination-list {
@@ -2232,8 +2213,8 @@ img {
 }
 
 .reply-form .get-in-textarea {
-    width: 1020px;
-    margin-bottom: 0;
+  width: 1020px;
+  margin-bottom: 0;
 }
 
 /* -------------- CONTACT-US PAGE --------------*/
