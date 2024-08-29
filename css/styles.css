@@ -334,14 +334,13 @@ img {
 /* -------------- ABOUT-US SECTION --------------*/
 
 .about-us {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
   margin-bottom: 100px;
   /*background-image: url(../img/big-star.svg);
   background-repeat: no-repeat;
   background-size: 400px 400px;
   background-position: bottom left -255px;*/ 
-  position: relative;
 }
 
 .about-us::before {
@@ -387,8 +386,10 @@ img {
 }
 
 .about-us-list {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 30px;
   margin-bottom: 30px;
@@ -397,7 +398,7 @@ img {
 .about-us-item {
   position: relative;
   background-color: #141b22;
-  width: 570px;
+  /*width: 570px;*/
   padding: 82px 30px 30px 30px;
   z-index: 1;
 }
@@ -505,8 +506,11 @@ img {
 }
 
 .binabox-card-list {
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  justify-items: center;
   gap: 30px;
 }
 
@@ -569,6 +573,9 @@ img {
 
 .map-info {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 79px;
   background-color: #ffffff0d;
   padding: 48px 43px;
@@ -576,15 +583,21 @@ img {
 }
 
 .map-pictures {
-  display: flex;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 470px 225px;
   gap: 20px;
 }
 
-.image-wrapper {
+.map-img.big {
+  grid-row: span 2;
+}
+
+/*.image-wrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+}*/
 
 .map-describe {
   display: flex;
@@ -751,13 +764,12 @@ img {
   margin-bottom: 100px;
 }
 
-.partners.about-us {
-  margin-bottom: 100px;
-}
-
 .partner-list {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  justify-items: center;
   gap: 30px;
 }
 
@@ -794,15 +806,17 @@ img {
 }
 
 .faqs-wrap {
-  display: inline-flex;
+  /*display: inline-flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;*/
+  display: grid;
   gap: 24px;
+  width: 930px;
+  margin: 0 auto;
 }
 
 .faqs-list {
   background: #141b22;
-  width: 930px;
 }
 
 .faqs-item {
@@ -845,58 +859,64 @@ img {
 
 .join-us {
   position: relative;
-  z-index: 1;
+  /*z-index: 1;*/
   margin-bottom: -142px;
+  overflow: hidden;
 }
 
 .join-us .container {
   background: 
+    url(/img/star.svg),
+    url(/img/star.svg),
+    url(/img/big-star.svg),
     linear-gradient(268.28deg, #2333de -1.34%, #0abe66 100%);
+  background-repeat: no-repeat;
+  background-size: 255px, 136px, 312px, cover;
+  background-position: top 76px left -35px, top 15px left 350px, top -50px right -50px,center;
+  
   padding-top: 40px;
-  padding-bottom: 48px;    
+  padding-bottom: 48px;
 }  
 
-.join-us::before {
+/*.join-us::before {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/big-star.webp);
+  background-image: url(/img/star.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 255px auto;
   width: 255px;
   height: 255px;
   transform: rotate(-10deg);
   top: 76px;
   left: -5px;
+  
 }
 
-.join-us::after {
+.join-us:: {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/big-star.webp);
+  background-image: url(/img/star.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: ;
   width: 136px;
   height: 136px;
-  top: 0;
-  left: 700px;
 }
 
 .join-us::after {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/big-star.webp);
+  background-image: url(/img/big-star.svg);
   background-repeat: no-repeat;
   background-size: cover; 
   background-blend-mode: screen;
   width: 322px;
   height: 322px;
-  bottom: -15px;
-  right: 15px;
-  overflow: hidden;
-}
+  bottom: -10px;
+  right: 5px;
+}*/
 
 .section.title.join {
   margin-bottom: 8px;
@@ -2386,7 +2406,9 @@ img {
 }
 
 .about-list {
-  display: flex;
+  /*display: flex;*/
+  display: grid;grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  justify-items: center;
   gap: 30px;
 }
 
