@@ -1717,18 +1717,24 @@ img {
 }
 
 .blog-list {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 30px;
+  justify-items: center;
   margin-bottom: 40px;
 }
 
 .blog-item {
   background: #141b22;
   width: 450px;
-  padding: 30px 20px;
-
   position: relative;
+}
+
+.blog-card-link {
+  display: block;
+  padding: 30px 20px;
 }
 
 .blog-card-label.title {
