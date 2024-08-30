@@ -1420,6 +1420,9 @@ img {
 }
 .footer-nav {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 130px;
 }
 
@@ -1482,6 +1485,9 @@ img {
 
 .catalog-card {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 99px;
 }
 
@@ -1553,11 +1559,8 @@ img {
   line-height: 1.22;
 }
 
-.card-filter {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 23px;
-  column-gap: 16px;
+.card-info-wrapper {
+  width: 620px;
 }
 
 .card-title {
@@ -1578,12 +1581,18 @@ img {
 }
 
 .card-filter {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(196px, 1fr));
+  row-gap: 23px;
+  column-gap: 16px;
   margin-bottom: 30px;
 }
 
 .card-wrapper {
   background-color: #141b22;
-  width: 196px;
+  /*width: 196px;*/
   height: 100px;
   padding: 20px;
 }
