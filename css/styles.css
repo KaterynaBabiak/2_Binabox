@@ -1180,7 +1180,9 @@ img {
 /* -------------- catalog filter --------------*/
 
 .catalog .container {
-  display: flex;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 280px 1fr;
   gap: 80px;
   margin-bottom: 100px;
 }
@@ -1192,8 +1194,9 @@ img {
 }
 
 .sidebar-form {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
   gap: 12px;
 }
 
@@ -1230,6 +1233,8 @@ img {
 }
 
 .sidebar-list[open] .sidebar-item-info {
+  display: grid;
+  gap: 12px;
   border-top: 1px solid #434343;
   text-transform: capitalize;
   padding: 20px 23px;
@@ -1241,7 +1246,7 @@ img {
   display: block;
   position: relative;
   padding-left: 26px;
-  margin-bottom: 12px;
+  /*margin-bottom: 12px;*/
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1301,9 +1306,9 @@ img {
   transform: rotate(45deg);
 }
 
-.catalog-wrapper {
+/*.catalog-wrapper {
   width: 1050px;
-}
+}*/
 
 .catalog-header {
   display: flex;
@@ -1357,8 +1362,11 @@ img {
 /* -------------- catalog range --------------*/
 
 .catalog-range-list {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  justify-items: center;
   gap: 30px;
 }
 
