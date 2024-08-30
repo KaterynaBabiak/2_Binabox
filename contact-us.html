@@ -145,13 +145,13 @@
             </div>
         </section>
         <section class="get-in-touch">
-            <div class="container">
+            <div class="container in-touch-form">
                 <h2 class="get-in title">
                     Get in touch
                 </h2>
                 <p class="get-in-text">Browse through the most freuently asked questions</p>
                 <form action="#" method="post" class="contact-us-form">
-                    <span class="contact-info">
+                    <span class="input-wrapper">
                     <label for="name" class="visually-hidden">Name</label>
                     <input class="get-in-input name validation"
                         type="text" 
@@ -164,6 +164,8 @@
                         minlength="2"
                         inputmode="text"
                     />
+                    </span>
+                    <span class="input-wrapper">
                     <label for="email" class="visually-hidden">Email</label>
                     <input class="get-in-input email validation"
                         type="email" 
@@ -176,6 +178,7 @@
                         inputmode="email"
                     />
                     </span>
+                    <span class="input-wrapper phone">
                     <label for="phone" class="visually-hidden">Phone Number</label>
                     <input class="get-in-input phone validation"
                         type="tel" 
@@ -187,6 +190,8 @@
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         inputmode="tel"
                     />
+                    </span>
+                    <span class="input-wrapper textarea">
                     <label for="message" class="visually-hidden">Messenger</label>
                     <textarea class="get-in-textarea"
                         id="message"
@@ -194,6 +199,7 @@
                         placeholder="Messanger"
                         required
                     ></textarea>
+                    </span>
                     <button class="get-in-submit-button" type="submit">SEND MESSANGER</button>
                 </form>
             </div>
