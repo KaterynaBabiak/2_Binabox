@@ -71,11 +71,13 @@
                 </ul>
             </nav>
             <div class="connect-wrapper">
-                <button type="button" class="mode-btn">
-                    <svg class="mode-icon" width="24" height="24">
-                        <use href="./img/icons/sprite.svg#icon-sun"></use>
-                    </svg>
-                </button>
+                <form action="#" method="post">
+                    <input class="visually-hidden switchmode-input"
+                    type="checkbox"
+                    name="switch"
+                    id="switch">
+                    <label class="switch-btn" for="switch"></label>
+                </form>
                 <a href="https://discord.com" target="_blank" class="header-discord-link">
                     <svg class="header-discord-icon" width="24" height="24">
                         <use href="./img/icons/sprite.svg#icon-discord"></use>
@@ -257,8 +259,8 @@
                             name="search"
                             autocomplete="off"
                             placeholder="Search NFT" >
-                            <button class="buttonn-search" type="submit">
-                                <svg class="search" width="20" height="20">
+                            <button class="button-search" type="submit">
+                                <svg class="icon-search" width="20" height="20">
                                     <use href="./img/icons/sprite.svg#icon-search"></use>
                                 </svg>
                             </button>
@@ -378,46 +380,42 @@
             <div class="reply container">
                 <h2 class="blog-detail-reply title">LEAVE A REPLY</h2>
                 <p class="blog-detail-reply-text">Your email address will not be published. Required fields are marked</p>
-                <form class="reply-form"action="#" method="post">
-                    <div class="input-wrapper">
-                        <label for="name" class="visually-hidden">Name</label>
-                        <input class="get-in-input reply-name"
-                        type="text"
-                        id="name" 
-                        name="name" 
-                        autocomplete="name" 
-                        placeholder="Name*"
-                        required
+                <form class="reply-form" action="#" method="post">
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input class="get-in-input reply-name"
+                    type="text"
+                    id="name" 
+                    name="name" 
+                    autocomplete="name" 
+                    placeholder="Name*"
+                    required
                     />
                     <label for="email" class="visually-hidden">Email</label>
                     <input class="get-in-input reply-email"
-                        type="email" 
-                        id="email"
-                        name="email" 
-                        autocomplete="email"
-                        placeholder="Enter your email*"
-                        required
+                    type="email" 
+                    id="email"
+                    name="email" 
+                    autocomplete="email"
+                    placeholder="Enter your email*"
+                    required
                     />
-                    </div>
-                    <div class="input-wrapper">
-                        <label for="phone" class="visually-hidden">Phone</label>
-                        <input class="get-in-input reply-phone"
-                        type="tel" 
-                        id="phone"
-                        name="phone" 
-                        autocomplete="on" 
-                        placeholder="Phone Number*"
-                        required
+                    <label for="phone" class="visually-hidden">Phone</label>
+                    <input class="get-in-input reply-phone"
+                    type="tel" 
+                    id="phone"
+                    name="phone" 
+                    autocomplete="on" 
+                    placeholder="Phone Number*"
+                    required
                     />
-                        <label for="website" class="visually-hidden">Website</label>
+                    <label for="website" class="visually-hidden">Website</label>
                     <input class="get-in-input reply-website"
                     type="url" 
                     id="website"
                     name="website"  
                     placeholder="Website"
                     required
-                    />
-                    </div>
+                     />
                     <label for="message" class="visually-hidden">Messenger</label>
                     <textarea class="get-in-textarea"
                         id="message"
@@ -430,7 +428,7 @@
             </div>
         </section>
         <section class="join-us">
-            <div class="container">
+            <div class="join-us-wrapper container">
                 <h2 class="section title join">JOIN OUR COMMUNITY</h2>
                 <p class="join-us-text white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 <ul class="join-us-btn-list">

@@ -71,11 +71,13 @@
                 </ul>
             </nav>
             <div class="connect-wrapper">
-                <button type="button" class="mode-btn">
-                    <svg class="mode-icon" width="24" height="24">
-                        <use href="./img/icons/sprite.svg#icon-sun"></use>
-                    </svg>
-                </button>
+                <form action="#" method="post">
+                    <input class="visually-hidden switchmode-input"
+                    type="checkbox"
+                    name="switch"
+                    id="switch">
+                    <label class="switch-btn" for="switch"></label>
+                </form>
                 <a href="https://discord.com" target="_blank" class="header-discord-link">
                     <svg class="header-discord-icon" width="24" height="24">
                         <use href="./img/icons/sprite.svg#icon-discord"></use>
@@ -114,7 +116,7 @@
             <div class="container">
                 <aside class="sidebar">
                     <form action="#" class="sidebar-form">
-                        <details class="sidebar-list">
+                        <details class="sidebar-list" open>
                             <summary class="sidebar-item">clothing</summary>
                             <div class="sidebar-item-info">
                                 <label class="sidebar-label" for="clothing1">
@@ -180,7 +182,7 @@
                                 </label>
                             </div>  
                         </details>         
-                        <details class="sidebar-list">
+                        <details class="sidebar-list" open>
                             <summary class="sidebar-item">eyes</summary>
                             <div class="sidebar-item-info">
                                 <label class="sidebar-label" for="eyes1">
@@ -266,7 +268,7 @@
                         <details class="sidebar-list">
                             <summary class="sidebar-item">background</summary>
                         </details>
-                        <details class="sidebar-list">
+                        <details class="sidebar-list" open>
                             <summary class="sidebar-item">special</summary>
                             <div class="sidebar-item-info">
                                 <label class="sidebar-label" for="special1"> 
@@ -344,7 +346,7 @@
                                 name="search"
                                 autocomplete="off"
                                 placeholder="Search NFT" >
-                                <button class="buttonn-search" type="submit">
+                                <button class="button-search" type="submit">
                                     <svg class="search" width="20" height="20">
                                         <use href="./img/icons/sprite.svg#icon-search"></use>
                                     </svg>
@@ -356,7 +358,7 @@
                             <li class="catalog-filter-item">
                                 <button type="reset" class="catalog-filter-option">
                                     King
-                                    <svg class="filter-icon" width="24" height="24">
+                                    <svg class="close-icon" width="24" height="24">
                                         <use href="./img/icons/sprite.svg#icon-close"></use>
                                     </svg>
                                 </button>
@@ -364,7 +366,7 @@
                             <li class="catalog-filter-item">
                                 <button type="reset" class="catalog-filter-option">
                                     Mix
-                                    <svg class="filter-icon" width="24" height="24">
+                                    <svg class="close-icon" width="24" height="24">
                                         <use href="./img/icons/sprite.svg#icon-close"></use>
                                     </svg>
                                 </button>
@@ -372,7 +374,7 @@
                             <li class="catalog-filter-item">
                                 <button type="reset" class="catalog-filter-option">
                                     Skacura
-                                    <svg class="filter-icon" width="24" height="24">
+                                    <svg class="close-icon" width="24" height="24">
                                         <use href="./img/icons/sprite.svg#icon-close"></use>
                                     </svg>
                                 </button>

@@ -71,11 +71,13 @@
                 </ul>
             </nav>
             <div class="connect-wrapper">
-                <button type="button" class="mode-btn">
-                    <svg class="mode-icon" width="24" height="24">
-                        <use href="./img/icons/sprite.svg#icon-sun"></use>
-                    </svg>
-                </button>
+                <form action="#" method="post">
+                    <input class="visually-hidden switchmode-input"
+                    type="checkbox"
+                    name="switch"
+                    id="switch">
+                    <label class="switch-btn" for="switch"></label>
+                </form>
                 <a href="https://discord.com" target="_blank" class="header-discord-link">
                     <svg class="header-discord-icon" width="24" height="24">
                         <use href="./img/icons/sprite.svg#icon-discord"></use>
@@ -111,8 +113,8 @@
             </div>
         </section>
         <section class="about-us">
-            <div class="container">
-                <h2 class="section title">THE STORY</h2> 
+            <div class="about-us-page container">
+                <h2 class="section title about">THE STORY</h2> 
                 <p class="about-us-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat</p>
                 <div class="sum-wrapper">
                     <div class="sum-list">
@@ -124,34 +126,36 @@
                         <p class="num-item title">1000+</p>
                     </div>
                 </div>
-
-
                 <ol class="about-list">
                     <li class="about-us-item highlighting">
-                        <p class="about-us-number">01</p>
-                        <h3 class="about-us-item-title title">hIGH QUAILITY</h3>
-                        <p class="about-us-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                        <span class="about-us-wrapper">
+                            <h3 class="about-us-item-title title">hIGH QUAILITY</h3>
+                            <p class="about-us-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                        </span>
                     </li>
                     <li class="about-us-item highlighting">
-                        <p class="about-us-number">02</p>
-                        <h3 class="about-us-item-title title">biG cOLLECTION</h3>
-                        <p class="about-us-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.</p>
+                        <span class="about-us-wrapper">
+                            <h3 class="about-us-item-title title">biG cOLLECTION</h3>
+                            <p class="about-us-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry.</p>
+                        </span>
                     </li>
                     <li class="about-us-item highlighting">
-                        <p class="about-us-number">03</p>
-                        <h3 class="about-us-item-title title">TOP RESOURCE</h3>
-                        <p class="about-us-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                        <span class="about-us-wrapper">
+                            <h3 class="about-us-item-title title">TOP RESOURCE</h3>
+                            <p class="about-us-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                        </span>
                     </li>
                     <li class="about-us-item highlighting">
-                        <p class="about-us-number">04</p>
-                        <h3 class="about-us-item-title title">BIG COMMUNITY</h3>
-                        <p class="about-us-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                        <span class="about-us-wrapper">
+                            <h3 class="about-us-item-title title">BIG COMMUNITY</h3>
+                            <p class="about-us-item-text">Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry. </p>
+                        </span>
                     </li>
                 </ol>
             </div>
         </section>
         <section class="our-team" id="our_team">
-            <div class="container">
+            <div class="team-wrapper container">
                <h2 class="section title">OUR TEAM</h2> 
                <ul class="team-list">
                 <li class="team-item highlighting">
@@ -402,8 +406,8 @@
                </ul>
             </div>
         </section>
-        <section class="partners about-us">
-            <div class="container">
+        <section class="partners">
+            <div class="partners-wrapper container">
                 <h2 class="section title"><span class="accent">BINABOX</span> PARTNER</h2>
                 <ul class="partner-list">
                     <li class="partner-item">
@@ -554,7 +558,7 @@
             </div>
         </section>
         <section class="join-us">
-            <div class="container">
+            <div class="join-us-wrapper container">
                 <h2 class="section title join">JOIN OUR COMMUNITY</h2>
                 <p class="join-us-text white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 <ul class="join-us-btn-list">
