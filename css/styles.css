@@ -162,7 +162,7 @@ img {
   height: 48px;
   border-radius: 50%;
   background-color: #141B22;
-  background-image: url(/img/icons/sun.svg);
+  background-image: url(../img/icons/sun.svg);
   background-repeat: no-repeat;
   background-position: center; 
   cursor: pointer;
@@ -170,7 +170,7 @@ img {
 
 .switchmode-input:checked + .switch-btn::before {
   background-color: #21e786;
-  background-image: url(/img/icons/sun-dark.svg);
+  background-image: url(../img/icons/sun-dark.svg);
 }
 
 .header-discord-link {
@@ -238,7 +238,7 @@ img {
 
 .hero .container::after {
   position: absolute;
-  content: url(/img/big-star.svg);
+  content: url(../img/big-star.svg);
   display: block;
   width: 500px;
   height: 500px;
@@ -391,7 +391,7 @@ img {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/big-star.svg);
+  background-image: url(../img/big-star.svg);
   background-repeat: no-repeat;
   background-size: 400px auto;
   width: 400px;
@@ -859,7 +859,7 @@ img {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/big-star.svg);
+  background-image: url(../img/big-star.svg);
   background-repeat: no-repeat;
   background-size: 450px auto;
   width: 450px;
@@ -931,7 +931,7 @@ img {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/star.svg);
+  background-image: url(../img/star.svg);
   background-repeat: no-repeat;
   background-size: 285px auto;
   width: 285px;
@@ -1064,7 +1064,7 @@ img {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/big-star.svg);
+  background-image: url(../img/big-star.svg);
   background-repeat: no-repeat;
   background-size: 255px auto;
   width: 255px;
@@ -1080,7 +1080,7 @@ img {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/big-star.svg);
+  background-image: url(../img/big-star.svg);
   background-size: cover;
   width: 322px;
   height: 322px;
@@ -1101,7 +1101,7 @@ img {
   position: absolute;
   top: -35px;
   left: 25%;
-  background-image: url(/img/star.svg);
+  background-image: url(../img/star.svg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 136px;
@@ -2272,7 +2272,7 @@ img {
 }
 
 .raiting.icon-card::before {
-  background-image: url(/img/icons/star.svg);
+  background-image: url(../img/icons/star.svg);
 }
 
 .blog-detail-quote-raiting {
@@ -2723,7 +2723,7 @@ img {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/big-star.svg);
+  background-image: url(../img/big-star.svg);
   background-repeat: no-repeat;
   background-size: 255px auto;
   width: 275px;
@@ -2739,7 +2739,7 @@ img {
   content: '';
   display: block;
   position: absolute;
-  background-image: url(/img/star.svg);
+  background-image: url(../img/star.svg);
   background-size: cover;
   width: 184px;
   height: 184px;
