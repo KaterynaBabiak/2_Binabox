@@ -679,6 +679,92 @@ img {
   margin: 0;
 }
 
+.map-pagination {
+  display: flex;
+  gap: 19px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.map-pagination-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.map-icon-arrow {
+  fill: #888b8e;
+  stroke: #888b8e;
+}
+
+.map-icon-arrow:hover {
+  fill: #21e786;
+  stroke: #21e786;
+}
+
+/**--------------------------------pagination----------------------------**/
+
+.map-pagination-list {
+  display: flex;  
+  width: 100%;
+  counter-reset: roadmap-counter;
+  }
+  
+.map-pagination-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  cursor: pointer;
+}
+  
+.map-pagination-item::before,
+.map-pagination-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 20%;
+  background-color: #434343;
+  z-index: -1;
+}
+
+.map-pagination.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  font-family: "Bakbak One", Arial, sans-serif;
+  text-transform: uppercase;  
+}
+
+.map-pagination.title::after {
+  counter-increment: roadmap-counter;
+  content: "phase " counter(roadmap-counter);
+}
+
+.map-pagination.title::before {
+  content: '';
+  width: 30px;
+  height: 30px;   
+}
+
+.map-pagination-item .icon-elipse {
+  background-image: url(../img/icons/elipse.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.map-pagination-item:hover .title {
+  color: #fff;
+}
+
+.map-pagination-item:hover .icon-elipse {
+  background-image: url(../img/icons/elipse-hower.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/*
 .roadmap-nav {
   display: flex;
   gap: 20px;
@@ -699,8 +785,7 @@ img {
   cursor: pointer;
 }
 
-.roadmap-nav-item::before
-/*.roadmap-nav-item::after*/ {
+.roadmap-nav-item::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -759,7 +844,7 @@ img {
 .roadmap-icon-arrow:active {
   fill: #21e786;
   stroke: #21e786;
-}
+}*/
 
 /* -------------- OUT-TEAM SECTION --------------*/
 
