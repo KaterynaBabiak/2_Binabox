@@ -114,6 +114,11 @@ img {
   margin-right: 67px;
 }
 
+.header .logo-link:hover {
+  filter: drop-shadow(2px 2px 2px #21E786);
+  transition: .3s ease-in-out;
+}
+
 .header .logo-img {
   width: 100%;
   margin-right: 16px;
@@ -158,7 +163,7 @@ img {
   width: 0;
   height: 2px;
   background-color: #21E786;
-  transition: .5s;
+  transition: .3s;
 }
 
 .header-nav-item:hover .header-nav-link::after,
@@ -172,7 +177,7 @@ img {
 }
 
 .header-nav-item .icon-arrow-down {
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .header-nav-item:hover .icon-arrow-down,
@@ -190,8 +195,8 @@ img {
   height: fit-content;
   padding: 16px 60px 16px 20px;
   background: #141B22;
-  box-shadow: 0px 10px 25px #475C851A;
-  transition: all 0.5s ease-in-out;
+  box-shadow: 0 10px 25px #475C851A;
+  transition: 0.3s ease-in-out;
 }
 
 .header-nav-item:hover .dropdown-menu,
@@ -209,7 +214,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #fff;
-  transition: color .5s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 .dropdown-link:hover,
@@ -274,7 +279,7 @@ img {
   padding: 12px 24px;
   gap: 8px;
   display: flex;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .header-discord-link:hover,
@@ -294,12 +299,12 @@ img {
   padding: 12px 24px;
   gap: 8px;
   display: flex;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .header-connect-icon {
   fill: #141b22;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .header-connect-btn:hover,
@@ -401,7 +406,7 @@ img {
   background-color: #21e786;
   border: 2px solid #21E786;
   padding: 12px 24px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .hero-btn-connect:hover,
@@ -420,7 +425,7 @@ img {
   background-color: #0d0d11;
   border: 2px solid #21e786;
   padding: 12px 24px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .hero-btn-whitelist:hover,
@@ -454,7 +459,7 @@ img {
 .card-item {
   background: #FFFFFF0D;
   flex: 0 0 auto;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .card-item:hover,
@@ -577,7 +582,7 @@ img {
   border-style: solid;
   pointer-events: none;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .highlighting::before {
@@ -648,7 +653,7 @@ img {
   width: fit-content;
   margin: 0 auto;
   display: block;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .read-more-btn:hover,
@@ -676,7 +681,7 @@ img {
   text-align: center;
   background-color: #141b22;
   width: 100%;
-  padding: 30px 26px 26px 26px;
+  padding: 30px 26px 26px;
   position: relative;
 }
 
@@ -801,7 +806,7 @@ img {
 .map-icon-arrow {
   fill: #888b8e;
   stroke: #888b8e;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .map-icon-arrow:hover {
@@ -843,7 +848,7 @@ img {
   gap: 8px;
   font-family: "Bakbak One", Arial, sans-serif;
   text-transform: uppercase;  
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .map-pagination.title::after {
@@ -861,7 +866,7 @@ img {
   background-image: url(../img/icons/elipse.svg);
   background-repeat: no-repeat;
   background-position: top center;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .map-pagination-item:hover .title {
@@ -1022,7 +1027,7 @@ img {
 
 .team-socialmedia-icon {
   fill: #c2c3c5;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .team-socialmedia-icon:hover {
@@ -1065,7 +1070,7 @@ img {
   width: 210px;
   height: 100px;
   border: 2px solid transparent;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 
@@ -1136,7 +1141,7 @@ img {
   background-image: url(../img/icons/plus+.svg);
   background-size: content;
   width: 32px;
-  transition: all .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .faqs-list[open] .faqs-item::after {
@@ -1261,7 +1266,7 @@ img {
   display: flex;
   gap: 8px;
   padding: 12px 24px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .join-us-discord-link:hover,
@@ -1289,7 +1294,7 @@ img {
   border: 2px solid #21E786;
   height: 56px;
   padding: 12px 24px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .join-us-whitelist-btn:hover,
@@ -1356,7 +1361,7 @@ img {
   width: 50px;
   height: 50px;
   padding: 11px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .join-socialmedia-item:hover {
@@ -1404,7 +1409,7 @@ img {
   line-height: 1.57;
   text-transform: capitalize;
   color: #c2c3c5;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .footer-nav-link:hover,
@@ -1443,7 +1448,7 @@ img {
   line-height: 1.43;
   text-transform: uppercase;
   color: #888b8e;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .hero-link:hover,
@@ -1580,11 +1585,12 @@ img {
   height: 24px;
   background: url(../img/icons/plus+.svg);
   background-size: cover;
-  transition: all .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .sidebar-list[open] .sidebar-item::after {
   background: url(../img/icons/minus-.svg);
+  background-size: cover;
 }
 
 .sidebar-list[open] .sidebar-item-info {
@@ -1697,7 +1703,7 @@ img {
 
 .close-icon {
   stroke: #f7f7f7;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
   
 }
 
@@ -1716,7 +1722,7 @@ img {
   color: #21e786;
   background-color: #141b22;
   border: none;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .catalog-filter-reset-btn:hover,
@@ -1836,7 +1842,7 @@ img {
 .join-socialmedia-icon,
 .footer-socialmedia-icon {
   fill: #FFF;
-  transition: fill .5s ease-in-out;
+  transition: fill .3s ease-in-out;
 }
 
 .footer-socialmedia-icon:hover,
@@ -2002,7 +2008,7 @@ img {
   padding: 16px 16px;
   margin-bottom: 24px;
   width: 100%;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .card-buy-btn:hover,
@@ -2014,7 +2020,7 @@ img {
 
 .buy-icon {
   fill: #141B22;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .card-buy-btn:hover .buy-icon,
@@ -2041,7 +2047,7 @@ img {
   justify-content: center;
   gap: 8px;
   width: 290px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .card-socialmedia-link:hover,
@@ -2087,7 +2093,7 @@ img {
   width: 48px;
   height: 48px;
   padding: 11px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .scrollbar-btn:hover,
@@ -2098,7 +2104,7 @@ img {
 .scrollbar-icon {
   fill: #fff;
   stroke: #fff;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .scrollbar-icon.next {
@@ -2132,7 +2138,7 @@ img {
 .blog-item {
   background: #141b22;
   position: relative;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .blog-item:hover,
@@ -2166,7 +2172,7 @@ img {
   position: absolute;
   top: 44px;
   right: 34px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .blog-detail-card-label.title {
@@ -2277,7 +2283,7 @@ img {
   border: 1px solid #141b22;
   width: 48px;
   height: 48px;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .pagination-button:hover,
@@ -2504,7 +2510,7 @@ img {
   gap: 16px;
   padding: 20px;
   border: 2px solid transparent;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .browsing-link:hover .browsing-label,
@@ -2579,7 +2585,7 @@ img {
   line-height: 1.57;
   text-align: left;
   color: #c2c3c5;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .categories-link:hover,
@@ -2600,7 +2606,7 @@ img {
   align-items: center;
   gap: 16px;
   border: 2px solid transparent;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .posts-link:hover {
@@ -2670,7 +2676,7 @@ img {
   background-color: #41454a66;
   padding: 8px 12px;
   border: 2px solid transparent;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .tag-link:hover,
@@ -2730,7 +2736,7 @@ img {
 
 .contact-item {
   border: 1px solid #434343;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .contact-item:hover,
@@ -2858,7 +2864,7 @@ img {
   border: 1px solid #21e786;
   padding: 12px 36px;
   justify-self: center;
-  transition: all .5s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .get-in-submit-button:hover,
